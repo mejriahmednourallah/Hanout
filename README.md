@@ -40,40 +40,57 @@ Modern commercial apps have devolved into interchangeable corporate templates dr
 
 ---
 
-## Frontend Showcase & Visual Tour
+## Frontend Showcase & Real Application Screenshots
 
-### 1. The Storefront & Regional Shelves
-The homepage bypasses generic banners and puts **Search First**. A prominent trilingual search bar supports colloquial Arabizi shortcuts (`zitoun`, `7rissa`, `degla`), followed by live cards for active negotiations and curated regional shelves from Sfax, Nabeul, and Tozeur.
+### 1. Storefront & Regional Shelves (`/`)
+The homepage bypasses generic banners and puts **Search First**. A prominent trilingual search bar supports colloquial Arabizi shortcuts (`zitoun`, `7rissa`, `degla`), followed by live cards for active negotiations and curated regional shelves from Sfax, Nabeul, and Tozeur with authentic stock photography.
 
-![Home Showcase](docs/screenshots/01_home_showcase.svg)
-
----
-
-### 2. The Signature Haggling Sheet & Live Negotiation Thread
-When a buyer clicks **"ساوم واقترح سعرك"**, an ergonomic bottom sheet (on mobile) or side drawer (on desktop) opens. It features quick percentage chips, an exact dinar stepper, and a vendor response time estimator. When accepted, the screen transitions into a live chat thread with a **circular countdown ring** locking the agreed price and holding stock in the warehouse.
-
-![Haggling Sheet and Thread](docs/screenshots/02_haggling_sheet_and_thread.svg)
+![Home Showcase](docs/screenshots/01_home_showcase.png)
 
 ---
 
-### 3. Vendor Sub-Orders & Cart Partitioning
-Because Hanout connects independent producers across the country, cart items are grouped by artisan. Each artisan gets their own dedicated shipping allocation via **Rapide-Poste** (7.000 DT flat rate) and negotiated prices display their saffron lock badge.
+### 2. Faceted Terroir Search (`/search`)
+Instant filtering across Tunisia's authentic catalog. Filter by origin governorate (*صفاقس، نابل، توزر، مدنين/جربة*), price range slider in millimes/dinars, and an instant **"يقبل المساومة فقط" (Accepts Offers Only)** toggle.
 
-![Cart Grouped by Vendor](docs/screenshots/03_cart_grouped_vendor.svg)
-
----
-
-### 4. Tunisian Address Cascade & SMS OTP Fraud Protection
-Checkout caters to Tunisian geography with cascading comboboxes (**Governorate &rarr; Delegation &rarr; Locality / Postal Code**). To protect artisans against fictitious Cash on Delivery (COD) orders, our risk engine triggers an unobtrusive 6-digit SMS verification modal.
-
-![Checkout and SMS OTP](docs/screenshots/04_checkout_and_otp.svg)
+![Faceted Search](docs/screenshots/02_faceted_search.png)
 
 ---
 
-### 5. Vendor Management Portal & Legal Fiscal Invoicing
-Artisans manage their business effortlessly with real-time conversion metrics and keyboard-driven offer triage (`[A]` Accept, `[C]` Counter, `[R]` Reject). Each delivered order automatically issues a compliant Tunisian e-invoice featuring gapless sequential numbering, VAT breakdown (7% and 19%), and the legal 1.000 DT fiscal stamp (*Timbre Fiscal*).
+### 3. Terroir Product Detail & Delivery Estimator (`/product/:slug`)
+Consistent `4:5` photography showcase with vendor credential badge (*تاجر موثق وخاضع للضريبة*), Rapide-Poste delivery estimator calculated dynamically across Tunisian governorates (24h to 48h), and the signature saffron **"ساوم واقترح سعرك"** action next to **"أضف إلى السلة"**.
 
-![Vendor Portal and Legal Invoice](docs/screenshots/05_vendor_portal_and_orders.svg)
+![Product Detail](docs/screenshots/03_product_detail.png)
+
+> **The Haggling Sheet & Live Lock**: Opening an offer triggers the bottom/side negotiation sheet with quick percentage chips (`-5%`, `-10%`, `-15%`), an exact dinar stepper, and a live circular countdown ring that locks the agreed price and reserves warehouse inventory.  
+> *(Detailed diagram: [docs/screenshots/02_haggling_sheet_and_thread.svg](docs/screenshots/02_haggling_sheet_and_thread.svg))*
+
+---
+
+### 4. Artisan-Grouped Cart (`/cart`)
+Cart items are partitioned by artisan to reflect independent shipping origins, each with its dedicated Rapide-Poste delivery allocation (7.000 DT) and saffron badges for price-locked negotiations.
+
+![Cart Grouped by Vendor](docs/screenshots/04_cart_grouped_vendor.png)
+
+---
+
+### 5. Tunisian Address Cascade & COD Risk Shield (`/checkout`)
+Streamlined checkout with Tunisian administrative divisions (**Governorate &rarr; Delegation &rarr; Locality / Postal Code**), validated `+216` mobile phone input, and Cash On Delivery payment selection. When triggered by the risk scoring engine, a 6-digit SMS OTP verification modal appears to eliminate fake orders.
+
+![Checkout Address Cascade](docs/screenshots/05_checkout_address_cascade.png)
+
+---
+
+### 6. Orders Tracking & Timeline (`/orders`)
+Independent tracking progression timeline per artisan shipment (`PLACED` &rarr; `CONFIRMED` &rarr; `SHIPPED` with Rapide-Poste tracking number `RP-TN-782914` &rarr; `DELIVERED`). Includes on-demand preview of compliant Tunisian e-invoices with fiscal stamps and VAT breakdowns.
+
+![Orders Tracking Timeline](docs/screenshots/06_orders_tracking_timeline.png)
+
+---
+
+### 7. Artisan Portal & Keyboard-Driven Inbox (`/vendor`)
+Artisan dashboard featuring real-time negotiation metrics and an incoming offers inbox with rapid keyboard triage shortcuts (`[A]` to accept and lock stock, `[C]` to counter with an alternative price, `[R]` to reject).
+
+![Vendor Portal Inbox](docs/screenshots/07_vendor_portal_inbox.png)
 
 ---
 
