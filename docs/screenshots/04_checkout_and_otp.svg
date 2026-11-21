@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap');
+      text { font-family: 'IBM Plex Sans Arabic', 'Inter', -apple-system, sans-serif; }
+      .en { font-family: 'Inter', sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, monospace; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1E1B18" flood-opacity="0.08"/>
+    </filter>
+    <filter id="modalShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#1E1B18" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="780" rx="16" fill="#FBF8F3" stroke="#E6DED2" stroke-width="2"/>
+  <path d="M0 16 C0 7.16 7.16 0 16 0 L1184 0 C1192.84 0 1200 7.16 1200 16 L1200 48 L0 48 Z" fill="#F3EEE6" stroke="#E6DED2" stroke-width="1"/>
+  <circle cx="24" cy="24" r="6" fill="#FF5F56"/>
+  <circle cx="44" cy="24" r="6" fill="#FFBD2E"/>
+  <circle cx="64" cy="24" r="6" fill="#27C93F"/>
+  <rect x="240" y="10" width="720" height="28" rx="8" fill="#FFFFFF" stroke="#E6DED2"/>
+  <text x="600" y="29" fill="#6B635A" font-size="12" text-anchor="middle" class="en">🔒 https://hanout.tn/checkout — تأكيد الطلب وعنوان التوصيل التونسي والتحقق عبر SMS OTP</text>
+
+  <!-- Left: Checkout Form (640px) -->
+  <g transform="translate(60, 80)">
+    <text x="0" y="24" fill="#1E1B18" font-size="22" font-weight="bold">بيانات التوصيل في الجمهورية التونسية</text>
+    <text x="0" y="44" fill="#6B635A" font-size="12">تسليم موثوق عبر كافة المعتمديات والولايات بواسطة Rapide-Poste</text>
+
+    <g transform="translate(0, 65)" filter="url(#shadow)">
+      <rect width="580" height="580" rx="16" fill="#FFFFFF" stroke="#E6DED2"/>
+      
+      <!-- Full Name -->
+      <g transform="translate(30, 25)">
+        <text x="0" y="14" fill="#1E1B18" font-size="12" font-weight="600">الاسم واللقب:</text>
+        <rect x="0" y="24" width="520" height="42" rx="8" fill="#FBF8F3" stroke="#E6DED2"/>
+        <text x="15" y="50" fill="#1E1B18" font-size="13">أحمد نور الله المجري</text>
+      </g>
+
+      <!-- Phone (+216) -->
+      <g transform="translate(30, 105)">
+        <text x="0" y="14" fill="#1E1B18" font-size="12" font-weight="600">رقم الهاتف الجوال (+216):</text>
+        <rect x="0" y="24" width="520" height="42" rx="8" fill="#FBF8F3" stroke="#E6DED2"/>
+        <rect x="4" y="28" width="75" height="34" rx="6" fill="#E6DED2"/>
+        <text x="41" y="50" fill="#1E1B18" font-size="12" font-weight="bold" text-anchor="middle" class="mono">+216</text>
+        <text x="95" y="50" fill="#1E1B18" font-size="14" font-weight="bold" class="mono">98 123 456</text>
+      </g>
+
+      <!-- Governorate & Delegation Cascading Selects -->
+      <g transform="translate(30, 185)">
+        <g transform="translate(0, 0)">
+          <text x="0" y="14" fill="#1E1B18" font-size="12" font-weight="600">الولاية:</text>
+          <rect x="0" y="24" width="250" height="42" rx="8" fill="#FFFFFF" stroke="#B8432A" stroke-width="1.5"/>
+          <text x="15" y="50" fill="#1E1B18" font-size="13" font-weight="bold">تونس (Tunis)</text>
+          <text x="230" y="50" fill="#6B635A" font-size="12">▼</text>
+        </g>
+        <g transform="translate(270, 0)">
+          <text x="0" y="14" fill="#1E1B18" font-size="12" font-weight="600">المعتمدية:</text>
+          <rect x="0" y="24" width="250" height="42" rx="8" fill="#FFFFFF" stroke="#E6DED2"/>
+          <text x="15" y="50" fill="#1E1B18" font-size="13">باب سويقة</text>
+          <text x="230" y="50" fill="#6B635A" font-size="12">▼</text>
+        </g>
+      </g>
+
+      <!-- Locality & Postal Code -->
+      <g transform="translate(30, 265)">
+        <text x="0" y="14" fill="#1E1B18" font-size="12" font-weight="600">المنطقة والرمز البريدي:</text>
+        <rect x="0" y="24" width="520" height="42" rx="8" fill="#FBF8F3" stroke="#E6DED2"/>
+        <text x="15" y="50" fill="#1E1B18" font-size="13">الحلفاوين (الرمز البريدي: 1006)</text>
+      </g>
+
+      <!-- Street Address -->
+      <g transform="translate(30, 345)">
+        <text x="0" y="14" fill="#1E1B18" font-size="12" font-weight="600">العنوان التفصيلي:</text>
+        <rect x="0" y="24" width="520" height="42" rx="8" fill="#FBF8F3" stroke="#E6DED2"/>
+        <text x="15" y="50" fill="#1E1B18" font-size="13">نهج سيدي محرز، عمارة الأندلس، الطابق الثاني</text>
+      </g>
+
+      <!-- Payment Method -->
+      <g transform="translate(30, 425)">
+        <text x="0" y="14" fill="#1E1B18" font-size="12" font-weight="600">طريقة الدفع:</text>
+        <rect x="0" y="24" width="250" height="46" rx="8" fill="#FDF8ED" stroke="#D49A2A" stroke-width="1.5"/>
+        <text x="15" y="52" fill="#2A1F08" font-size="12" font-weight="bold">● الدفع عند الاستلام (COD)</text>
+
+        <rect x="270" y="24" width="250" height="46" rx="8" fill="#FBF8F3" stroke="#E6DED2"/>
+        <text x="285" y="52" fill="#6B635A" font-size="12">○ دفع إلكتروني (Konnect)</text>
+      </g>
+
+      <!-- Place Order CTA -->
+      <g transform="translate(30, 505)">
+        <rect width="520" height="48" rx="12" fill="#B8432A"/>
+        <text x="260" y="30" fill="#FFFFFF" font-size="15" font-weight="bold" text-anchor="middle">تأكيد وإصدار الطلب</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Active Backdrop Overlay + SMS OTP Verification Modal -->
+  <g transform="translate(680, 110)">
+    <!-- Modal Card (460px) -->
+    <g transform="translate(0, 0)" filter="url(#modalShadow)">
+      <rect width="460" height="520" rx="20" fill="#FFFFFF" stroke="#E6DED2" stroke-width="2"/>
+      
+      <!-- Modal Top Icon -->
+      <circle cx="230" cy="60" r="32" fill="#D49A2A" fill-opacity="0.15"/>
+      <text x="230" y="70" fill="#D49A2A" font-size="30" text-anchor="middle">📱</text>
+
+      <!-- Modal Title -->
+      <text x="230" y="125" fill="#1E1B18" font-size="19" font-weight="bold" text-anchor="middle">تأكيد رمز التحقق (SMS OTP)</text>
+      <text x="230" y="150" fill="#6B635A" font-size="12" text-anchor="middle">أرسلنا رمز تأكيد مكوناً من 6 أرقام إلى هاتفك:</text>
+      <text x="230" y="172" fill="#B8432A" font-size="15" font-weight="bold" text-anchor="middle" class="mono">+216 98 123 456</text>
+
+      <!-- Why OTP Box -->
+      <g transform="translate(35, 195)">
+        <rect width="390" height="52" rx="10" fill="#FDFBF7" stroke="#E6DED2"/>
+        <text x="15" y="24" fill="#566B2F" font-size="11" font-weight="bold">🛡️ محرك الأمان ومكافحة الاحتيال (Risk Engine):</text>
+        <text x="15" y="40" fill="#6B635A" font-size="10">هذا الإجراء يضمن حماية الحرفيين التونسيين من الطلبات الوهمية.</text>
+      </g>
+
+      <!-- 6-Digit OTP Boxes -->
+      <g transform="translate(45, 275)">
+        <rect x="0" y="0" width="55" height="60" rx="10" fill="#FBF8F3" stroke="#B8432A" stroke-width="2"/>
+        <text x="27" y="40" fill="#1E1B18" font-size="24" font-weight="bold" text-anchor="middle" class="mono">7</text>
+
+        <rect x="65" y="0" width="55" height="60" rx="10" fill="#FBF8F3" stroke="#B8432A" stroke-width="2"/>
+        <text x="92" y="40" fill="#1E1B18" font-size="24" font-weight="bold" text-anchor="middle" class="mono">2</text>
+
+        <rect x="130" y="0" width="55" height="60" rx="10" fill="#FBF8F3" stroke="#B8432A" stroke-width="2"/>
+        <text x="157" y="40" fill="#1E1B18" font-size="24" font-weight="bold" text-anchor="middle" class="mono">9</text>
+
+        <rect x="195" y="0" width="55" height="60" rx="10" fill="#FBF8F3" stroke="#B8432A" stroke-width="2"/>
+        <text x="222" y="40" fill="#1E1B18" font-size="24" font-weight="bold" text-anchor="middle" class="mono">4</text>
+
+        <rect x="260" y="0" width="55" height="60" rx="10" fill="#FBF8F3" stroke="#B8432A" stroke-width="2"/>
+        <text x="287" y="40" fill="#1E1B18" font-size="24" font-weight="bold" text-anchor="middle" class="mono">8</text>
+
+        <rect x="325" y="0" width="55" height="60" rx="10" fill="#FBF8F3" stroke="#B8432A" stroke-width="2"/>
+        <text x="352" y="40" fill="#1E1B18" font-size="24" font-weight="bold" text-anchor="middle" class="mono">1</text>
+      </g>
+
+      <!-- Resend Timer -->
+      <text x="230" y="370" fill="#6B635A" font-size="12" text-anchor="middle">إعادة إرسال الرمز خلال <tspan fill="#B8432A" font-weight="bold" class="mono">0:45</tspan> ثانية</text>
+
+      <!-- Verify Button -->
+      <g transform="translate(35, 400)">
+        <rect width="390" height="52" rx="12" fill="#566B2F"/>
+        <text x="195" y="32" fill="#FFFFFF" font-size="15" font-weight="bold" text-anchor="middle">تأكيد الرمز وإصدار الشحنات ✓</text>
+      </g>
+
+      <text x="230" y="485" fill="#6B635A" font-size="11" text-anchor="middle">تشفير كامل وحماية لبيانات الدفع والتوصيل</text>
+    </g>
+  </g>
+</svg>

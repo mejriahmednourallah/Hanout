@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap');
+      text { font-family: 'IBM Plex Sans Arabic', 'Inter', -apple-system, sans-serif; }
+      .en { font-family: 'Inter', sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, monospace; }
+    </style>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBF8F3" />
+      <stop offset="100%" stop-color="#F5EFE6" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#1E1B18" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Browser Window Wrapper -->
+  <rect width="1200" height="780" rx="16" fill="#FFFFFF" stroke="#E6DED2" stroke-width="2"/>
+  
+  <!-- Browser Chrome Header -->
+  <path d="M0 16 C0 7.16 7.16 0 16 0 L1184 0 C1192.84 0 1200 7.16 1200 16 L1200 48 L0 48 Z" fill="#F3EEE6" stroke="#E6DED2" stroke-width="1"/>
+  <circle cx="24" cy="24" r="6" fill="#FF5F56"/>
+  <circle cx="44" cy="24" r="6" fill="#FFBD2E"/>
+  <circle cx="64" cy="24" r="6" fill="#27C93F"/>
+  
+  <!-- URL Bar -->
+  <rect x="240" y="10" width="720" height="28" rx="8" fill="#FFFFFF" stroke="#E6DED2"/>
+  <text x="600" y="29" fill="#6B635A" font-size="12" text-anchor="middle" class="en">🔒 https://hanout.tn — حانوت : سوق المساومة التونسية</text>
+
+  <!-- App Body -->
+  <rect x="0" y="48" width="1200" height="732" fill="url(#bgGrad)"/>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="0" y="48" width="1200" height="70" fill="#FFFFFF" stroke="#E6DED2" stroke-width="1"/>
+  
+  <!-- Logo -->
+  <g transform="translate(60, 60)">
+    <rect width="46" height="46" rx="12" fill="#B8432A"/>
+    <text x="23" y="32" fill="#FFFFFF" font-size="26" font-weight="bold" text-anchor="middle">ح</text>
+    <text x="58" y="24" fill="#B8432A" font-size="22" font-weight="bold">حانوت</text>
+    <rect x="116" y="8" width="74" height="20" rx="10" fill="#D49A2A" fill-opacity="0.18"/>
+    <text x="153" y="22" fill="#D49A2A" font-size="10" font-weight="bold" text-anchor="middle">مساومة حية</text>
+    <text x="58" y="42" fill="#6B635A" font-size="11">سوق التجارة الأصيلة والمساومة المباشرة</text>
+  </g>
+
+  <!-- Nav Links -->
+  <g transform="translate(480, 72)">
+    <rect x="0" y="0" width="75" height="32" rx="8" fill="#F3EEE6"/>
+    <text x="37" y="21" fill="#1E1B18" font-size="13" font-weight="600" text-anchor="middle">الرئيسية</text>
+    <text x="120" y="21" fill="#6B635A" font-size="13">دليل المنتوجات</text>
+    <text x="220" y="21" fill="#6B635A" font-size="13">طلباتي والتتبع</text>
+    <text x="315" y="21" fill="#6B635A" font-size="13">فضاء التاجر</text>
+    <circle cx="385" cy="14" r="3" fill="#D49A2A"/>
+  </g>
+
+  <!-- Lang Switcher & Cart Pill -->
+  <g transform="translate(980, 66)">
+    <!-- Lang -->
+    <rect x="0" y="0" width="100" height="34" rx="10" fill="#F3EEE6" stroke="#E6DED2"/>
+    <rect x="2" y="2" width="34" height="30" rx="8" fill="#FFFFFF"/>
+    <text x="19" y="22" fill="#1E1B18" font-size="12" font-weight="bold" text-anchor="middle">عربي</text>
+    <text x="52" y="22" fill="#6B635A" font-size="11" text-anchor="middle" class="en">FR</text>
+    <text x="82" y="22" fill="#6B635A" font-size="11" text-anchor="middle" class="en">EN</text>
+
+    <!-- Cart Button -->
+    <rect x="115" y="0" width="46" height="34" rx="10" fill="#FFFFFF" stroke="#E6DED2"/>
+    <text x="138" y="22" fill="#1E1B18" font-size="14" text-anchor="middle">🛒</text>
+    <circle cx="155" cy="6" r="8" fill="#B8432A"/>
+    <text x="155" y="10" fill="#FFFFFF" font-size="10" font-weight="bold" text-anchor="middle" class="mono">2</text>
+  </g>
+
+  <!-- Hero / Prominent Search (Search First Philosophy) -->
+  <g transform="translate(250, 140)">
+    <text x="350" y="30" fill="#1E1B18" font-size="28" font-weight="bold" text-anchor="middle">سوق خيرات تونس.. ساوم التاجر واقترح سعرك</text>
+    <text x="350" y="55" fill="#6B635A" font-size="13" text-anchor="middle">أسعار شفافة، مفاوضة مباشرة، حجز مخزون ذكي، وتوصيل سريع والدفع عند الباب</text>
+
+    <!-- Search Box -->
+    <g transform="translate(0, 75)" filter="url(#shadow)">
+      <rect width="700" height="56" rx="18" fill="#FFFFFF" stroke="#B8432A" stroke-width="2"/>
+      <text x="30" y="34" fill="#6B635A" font-size="15">🔍   ابحث عن زيت صفاقس، هريسة نابل، دقلة توزر، zitoun, 7rissa...</text>
+      <rect x="580" y="6" width="112" height="44" rx="12" fill="#B8432A"/>
+      <text x="636" y="33" fill="#FFFFFF" font-size="15" font-weight="bold" text-anchor="middle">ابحث الآن</text>
+    </g>
+
+    <!-- Arabizi Discovery Tags -->
+    <g transform="translate(90, 148)">
+      <text x="0" y="16" fill="#6B635A" font-size="12">كلمات شائعة بالعرابيزي:</text>
+      <rect x="120" y="0" width="62" height="24" rx="6" fill="#F3EEE6" stroke="#E6DED2"/>
+      <text x="151" y="16" fill="#1E1B18" font-size="11" text-anchor="middle" class="mono">zitoun</text>
+      
+      <rect x="190" y="0" width="60" height="24" rx="6" fill="#F3EEE6" stroke="#E6DED2"/>
+      <text x="220" y="16" fill="#1E1B18" font-size="11" text-anchor="middle" class="mono">7rissa</text>
+
+      <rect x="258" y="0" width="56" height="24" rx="6" fill="#F3EEE6" stroke="#E6DED2"/>
+      <text x="286" y="16" fill="#1E1B18" font-size="11" text-anchor="middle" class="mono">degla</text>
+
+      <rect x="322" y="0" width="65" height="24" rx="6" fill="#F3EEE6" stroke="#E6DED2"/>
+      <text x="354" y="16" fill="#1E1B18" font-size="11" text-anchor="middle">صفاقس</text>
+
+      <rect x="395" y="0" width="70" height="24" rx="6" fill="#F3EEE6" stroke="#E6DED2"/>
+      <text x="430" y="16" fill="#1E1B18" font-size="11" text-anchor="middle">توزر الحبيبة</text>
+    </g>
+  </g>
+
+  <!-- Regional Shelf Header: Sfax & Nabeul -->
+  <g transform="translate(60, 350)">
+    <text x="0" y="0" fill="#566B2F" font-size="12" font-weight="bold" letter-spacing="1">محصول الموسم والخيرات التونسية</text>
+    <text x="0" y="24" fill="#1E1B18" font-size="20" font-weight="bold">رفوف الجهات: من صفاقس والوطن القبلي وتوزر</text>
+    <line x1="0" y1="36" x2="1080" y2="36" stroke="#E6DED2" stroke-width="1"/>
+  </g>
+
+  <!-- 4:5 Product Cards Grid -->
+  <g transform="translate(60, 405)">
+    <!-- Card 1: Sfax Olive Oil -->
+    <g transform="translate(0, 0)" filter="url(#shadow)">
+      <rect width="250" height="340" rx="14" fill="#FFFFFF" stroke="#E6DED2"/>
+      <!-- 4:5 image block -->
+      <rect x="1" y="1" width="248" height="195" rx="13" fill="#EAE2D5"/>
+      <text x="125" y="105" fill="#6B635A" font-size="34" text-anchor="middle">🫒</text>
+      <!-- Badges -->
+      <rect x="12" y="12" width="85" height="22" rx="11" fill="#D49A2A"/>
+      <text x="54" y="27" fill="#2A1F08" font-size="10" font-weight="bold" text-anchor="middle">⚡ يقبل المساومة</text>
+      <rect x="180" y="12" width="58" height="22" rx="11" fill="#FFFFFF" fill-opacity="0.9"/>
+      <text x="209" y="27" fill="#1E1B18" font-size="10" text-anchor="middle">صفاقس</text>
+      <!-- Content -->
+      <text x="16" y="222" fill="#566B2F" font-size="11" font-weight="bold">متوفر (50 قطعة)</text>
+      <text x="16" y="242" fill="#1E1B18" font-size="14" font-weight="bold">زيت زيتون بكر ممتاز 5 لتر</text>
+      <text x="16" y="272" fill="#1E1B18" font-size="18" font-weight="bold" class="mono">125.000 د.ت</text>
+      <!-- Action -->
+      <rect x="14" y="292" width="222" height="36" rx="10" fill="#D49A2A"/>
+      <text x="125" y="315" fill="#2A1F08" font-size="12" font-weight="bold" text-anchor="middle">ساوم واقترح سعرك ⚡</text>
+    </g>
+
+    <!-- Card 2: Nabeul Harissa -->
+    <g transform="translate(275, 0)" filter="url(#shadow)">
+      <rect width="250" height="340" rx="14" fill="#FFFFFF" stroke="#E6DED2"/>
+      <rect x="1" y="1" width="248" height="195" rx="13" fill="#F4DDD8"/>
+      <text x="125" y="105" fill="#B8432A" font-size="34" text-anchor="middle">🌶️</text>
+      <rect x="12" y="12" width="85" height="22" rx="11" fill="#D49A2A"/>
+      <text x="54" y="27" fill="#2A1F08" font-size="10" font-weight="bold" text-anchor="middle">⚡ يقبل المساومة</text>
+      <rect x="185" y="12" width="53" height="22" rx="11" fill="#FFFFFF" fill-opacity="0.9"/>
+      <text x="211" y="27" fill="#1E1B18" font-size="10" text-anchor="middle">نابل</text>
+      <text x="16" y="222" fill="#566B2F" font-size="11" font-weight="bold">متوفر للتوصيل السريع</text>
+      <text x="16" y="242" fill="#1E1B18" font-size="14" font-weight="bold">هريسة عربي دياري أصيلة 1 كغ</text>
+      <text x="16" y="272" fill="#1E1B18" font-size="18" font-weight="bold" class="mono">18.500 د.ت</text>
+      <rect x="14" y="292" width="222" height="36" rx="10" fill="#D49A2A"/>
+      <text x="125" y="315" fill="#2A1F08" font-size="12" font-weight="bold" text-anchor="middle">ساوم واقترح سعرك ⚡</text>
+    </g>
+
+    <!-- Card 3: Tozeur Dates -->
+    <g transform="translate(550, 0)" filter="url(#shadow)">
+      <rect width="250" height="340" rx="14" fill="#FFFFFF" stroke="#E6DED2"/>
+      <rect x="1" y="1" width="248" height="195" rx="13" fill="#EEDFC8"/>
+      <text x="125" y="105" fill="#8B5A2B" font-size="34" text-anchor="middle">🌴</text>
+      <rect x="12" y="12" width="85" height="22" rx="11" fill="#D49A2A"/>
+      <text x="54" y="27" fill="#2A1F08" font-size="10" font-weight="bold" text-anchor="middle">⚡ يقبل المساومة</text>
+      <rect x="185" y="12" width="53" height="22" rx="11" fill="#FFFFFF" fill-opacity="0.9"/>
+      <text x="211" y="27" fill="#1E1B18" font-size="10" text-anchor="middle">توزر</text>
+      <text x="16" y="222" fill="#566B2F" font-size="11" font-weight="bold">فرز أول (جودة تصدير)</text>
+      <text x="16" y="242" fill="#1E1B18" font-size="14" font-weight="bold">دقلة النور واحات توزر 2 كغ</text>
+      <text x="16" y="272" fill="#1E1B18" font-size="18" font-weight="bold" class="mono">28.000 د.ت</text>
+      <rect x="14" y="292" width="222" height="36" rx="10" fill="#D49A2A"/>
+      <text x="125" y="315" fill="#2A1F08" font-size="12" font-weight="bold" text-anchor="middle">ساوم واقترح سعرك ⚡</text>
+    </g>
+
+    <!-- Card 4: Djerba Pottery -->
+    <g transform="translate(825, 0)" filter="url(#shadow)">
+      <rect width="250" height="340" rx="14" fill="#FFFFFF" stroke="#E6DED2"/>
+      <rect x="1" y="1" width="248" height="195" rx="13" fill="#E4DBCB"/>
+      <text x="125" y="105" fill="#7A5C3D" font-size="34" text-anchor="middle">🏺</text>
+      <rect x="12" y="12" width="85" height="22" rx="11" fill="#D49A2A"/>
+      <text x="54" y="27" fill="#2A1F08" font-size="10" font-weight="bold" text-anchor="middle">⚡ يقبل المساومة</text>
+      <rect x="180" y="12" width="58" height="22" rx="11" fill="#FFFFFF" fill-opacity="0.9"/>
+      <text x="209" y="27" fill="#1E1B18" font-size="10" text-anchor="middle">جربة</text>
+      <text x="16" y="222" fill="#566B2F" font-size="11" font-weight="bold">صناعة يدوية أصيلة</text>
+      <text x="16" y="242" fill="#1E1B18" font-size="14" font-weight="bold">طاجين فخار قلالة جربة الصحي</text>
+      <text x="16" y="272" fill="#1E1B18" font-size="18" font-weight="bold" class="mono">45.000 د.ت</text>
+      <rect x="14" y="292" width="222" height="36" rx="10" fill="#B8432A"/>
+      <text x="125" y="315" fill="#FFFFFF" font-size="12" font-weight="bold" text-anchor="middle">أضف إلى السلة مباشرة</text>
+    </g>
+  </g>
+</svg>

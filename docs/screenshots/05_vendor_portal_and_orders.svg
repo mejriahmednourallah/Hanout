@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap');
+      text { font-family: 'IBM Plex Sans Arabic', 'Inter', -apple-system, sans-serif; }
+      .en { font-family: 'Inter', sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, monospace; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1E1B18" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="780" rx="16" fill="#FBF8F3" stroke="#E6DED2" stroke-width="2"/>
+  <path d="M0 16 C0 7.16 7.16 0 16 0 L1184 0 C1192.84 0 1200 7.16 1200 16 L1200 48 L0 48 Z" fill="#F3EEE6" stroke="#E6DED2" stroke-width="1"/>
+  <circle cx="24" cy="24" r="6" fill="#FF5F56"/>
+  <circle cx="44" cy="24" r="6" fill="#FFBD2E"/>
+  <circle cx="64" cy="24" r="6" fill="#27C93F"/>
+  <rect x="240" y="10" width="720" height="28" rx="8" fill="#FFFFFF" stroke="#E6DED2"/>
+  <text x="600" y="29" fill="#6B635A" font-size="12" text-anchor="middle" class="en">🔒 https://hanout.tn/vendor — فضاء إدارة التاجر وتتبع الشحنات والفاتورة القانونية التونسية</text>
+
+  <!-- Left: Vendor Portal (560px) -->
+  <g transform="translate(60, 75)">
+    <text x="0" y="24" fill="#1E1B18" font-size="22" font-weight="bold">فضاء الحرفي والتاجر (Vendor Portal)</text>
+    <text x="0" y="44" fill="#6B635A" font-size="12">صندوق العروض الواردة مع اختصارات لوحة المفاتيح السريعة (A / C / R)</text>
+
+    <!-- Metrics Cards Row -->
+    <g transform="translate(0, 65)">
+      <!-- Metric 1 -->
+      <g transform="translate(0, 0)" filter="url(#shadow)">
+        <rect width="165" height="85" rx="12" fill="#FFFFFF" stroke="#E6DED2"/>
+        <text x="15" y="25" fill="#6B635A" font-size="11">إجمالي المبيعات المؤكدة</text>
+        <text x="15" y="55" fill="#1E1B18" font-size="18" font-weight="bold" class="mono">4,250.000</text>
+        <text x="15" y="72" fill="#566B2F" font-size="10">↑ +18% هذا الأسبوع</text>
+      </g>
+      <!-- Metric 2 -->
+      <g transform="translate(180, 0)" filter="url(#shadow)">
+        <rect width="165" height="85" rx="12" fill="#FFFFFF" stroke="#E6DED2"/>
+        <text x="15" y="25" fill="#6B635A" font-size="11">عروض تنتظر الرد</text>
+        <text x="15" y="55" fill="#D49A2A" font-size="22" font-weight="bold" class="mono">3</text>
+        <text x="15" y="72" fill="#D49A2A" font-size="10">متوسط الرد: 45 دقيقة</text>
+      </g>
+      <!-- Metric 3 -->
+      <g transform="translate(360, 0)" filter="url(#shadow)">
+        <rect width="165" height="85" rx="12" fill="#FFFFFF" stroke="#E6DED2"/>
+        <text x="15" y="25" fill="#6B635A" font-size="11">نسبة نجاح المفاوضات</text>
+        <text x="15" y="55" fill="#566B2F" font-size="22" font-weight="bold" class="mono">78%</text>
+        <text x="15" y="72" fill="#566B2F" font-size="10">ممتاز (أعلى من المعدل)</text>
+      </g>
+    </g>
+
+    <!-- Incoming Offers Inbox Card -->
+    <g transform="translate(0, 175)" filter="url(#shadow)">
+      <rect width="525" height="465" rx="16" fill="#FFFFFF" stroke="#E6DED2"/>
+      
+      <text x="25" y="35" fill="#1E1B18" font-size="16" font-weight="bold">صندوق عروض المساومة الواردة (Inbox)</text>
+      <text x="25" y="52" fill="#6B635A" font-size="11">استخدم لوحة المفاتيح: A للقبول، C للاقتراح، R للرفض</text>
+
+      <!-- Offer Item 1 (Highlighted) -->
+      <g transform="translate(20, 70)">
+        <rect width="485" height="175" rx="12" fill="#FDF8ED" stroke="#D49A2A" stroke-width="1.5"/>
+        
+        <text x="20" y="28" fill="#1E1B18" font-size="14" font-weight="bold">عرض #OFF-904 على: زيت زيتون بكر ممتاز 5L</text>
+        <text x="20" y="46" fill="#6B635A" font-size="11">المشتري: بلال من صفاقس • منذ 12 دقيقة • الجولة 1/3</text>
+
+        <g transform="translate(20, 65)">
+          <text x="0" y="16" fill="#6B635A" font-size="12">السعر الأصلي: 125.000 د.ت</text>
+          <text x="220" y="16" fill="#2A1F08" font-size="14" font-weight="bold">السعر المقترح:</text>
+          <text x="310" y="18" fill="#B8432A" font-size="18" font-weight="bold" class="mono">105.000 د.ت</text>
+          <text x="0" y="38" fill="#566B2F" font-size="11">هامش ربح مضمون للتاجر: 28.500 د.ت</text>
+        </g>
+
+        <!-- Keyboard Shortcut Action Buttons -->
+        <g transform="translate(20, 120)">
+          <!-- Accept [A] -->
+          <rect x="0" y="0" width="145" height="38" rx="8" fill="#566B2F"/>
+          <text x="15" y="24" fill="#FFFFFF" font-size="11" font-weight="bold">[A] قبول وحجز</text>
+
+          <!-- Counter [C] -->
+          <rect x="155" y="0" width="145" height="38" rx="8" fill="#D49A2A"/>
+          <text x="15" y="24" fill="#2A1F08" font-size="11" font-weight="bold" transform="translate(155, 0)">[C] اقتراح سعر</text>
+
+          <!-- Reject [R] -->
+          <rect x="310" y="0" width="135" height="38" rx="8" fill="#F3EEE6" stroke="#E6DED2"/>
+          <text x="15" y="24" fill="#6B635A" font-size="11" font-weight="bold" transform="translate(310, 0)">[R] رفض</text>
+        </g>
+      </g>
+
+      <!-- Offer Item 2 -->
+      <g transform="translate(20, 265)">
+        <rect width="485" height="100" rx="12" fill="#FFFFFF" stroke="#E6DED2"/>
+        <text x="20" y="28" fill="#1E1B18" font-size="13" font-weight="bold">عرض #OFF-902 على: هريسة عربي نابل 1 كغ</text>
+        <text x="20" y="46" fill="#6B635A" font-size="11">المشتري: مريم من تونس • اقترحت: 16.000 د.ت (الأصل: 18.500 د.ت)</text>
+        
+        <rect x="375" y="18" width="90" height="30" rx="6" fill="#566B2F"/>
+        <text x="420" y="38" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">قبول العرض</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Tracking Timeline & Legal Invoice Preview (500px) -->
+  <g transform="translate(640, 75)">
+    <text x="0" y="24" fill="#1E1B18" font-size="22" font-weight="bold">متابعة الشحن والفاتورة الرسمية</text>
+    <text x="0" y="44" fill="#6B635A" font-size="12">تتبع الشحنة مع Rapide-Poste وفاتورة بالمعرف الجبائي والطابع</text>
+
+    <!-- Tracking Card -->
+    <g transform="translate(0, 65)" filter="url(#shadow)">
+      <rect width="500" height="240" rx="16" fill="#FFFFFF" stroke="#E6DED2"/>
+      
+      <text x="25" y="32" fill="#1E1B18" font-size="15" font-weight="bold">طلب #1042 — شحنة معصرة صفاقس</text>
+      <rect x="340" y="16" width="135" height="26" rx="8" fill="#2B5C9E" fill-opacity="0.12"/>
+      <text x="407" y="33" fill="#2B5C9E" font-size="11" font-weight="bold" text-anchor="middle" class="mono">RP-TN-782914</text>
+
+      <!-- 4 Timeline Steps -->
+      <g transform="translate(30, 70)">
+        <line x1="20" y1="20" x2="420" y2="20" stroke="#E6DED2" stroke-width="3"/>
+        <line x1="20" y1="20" x2="280" y2="20" stroke="#566B2F" stroke-width="3"/>
+
+        <!-- Step 1: Placed -->
+        <circle cx="20" cy="20" r="14" fill="#566B2F"/>
+        <text x="20" y="24" fill="#FFFFFF" font-size="11" text-anchor="middle">✓</text>
+        <text x="20" y="50" fill="#1E1B18" font-size="11" font-weight="bold" text-anchor="middle">تم التسجيل</text>
+
+        <!-- Step 2: Confirmed -->
+        <circle cx="150" cy="20" r="14" fill="#566B2F"/>
+        <text x="150" y="24" fill="#FFFFFF" font-size="11" text-anchor="middle">✓</text>
+        <text x="150" y="50" fill="#1E1B18" font-size="11" font-weight="bold" text-anchor="middle">تأكيد التاجر</text>
+
+        <!-- Step 3: Shipped (Active) -->
+        <circle cx="280" cy="20" r="16" fill="#2B5C9E"/>
+        <text x="280" y="24" fill="#FFFFFF" font-size="11" text-anchor="middle">🚚</text>
+        <text x="280" y="50" fill="#2B5C9E" font-size="11" font-weight="bold" text-anchor="middle">مع الشاحن</text>
+
+        <!-- Step 4: Delivered -->
+        <circle cx="420" cy="20" r="14" fill="#E6DED2"/>
+        <text x="420" y="24" fill="#6B635A" font-size="11" text-anchor="middle">4</text>
+        <text x="420" y="50" fill="#6B635A" font-size="11" text-anchor="middle">التسليم وCOD</text>
+      </g>
+
+      <g transform="translate(25, 160)">
+        <rect width="450" height="55" rx="10" fill="#FBF8F3" stroke="#E6DED2"/>
+        <text x="15" y="24" fill="#2B5C9E" font-size="12" font-weight="bold">📍 آخر تحديث من مركز التوزيع بتونس العاصمة:</text>
+        <text x="15" y="42" fill="#6B635A" font-size="11">الطرد في عهدة ساعي البريد، التسليم متوقع اليوم بين 14:00 و 17:00.</text>
+      </g>
+    </g>
+
+    <!-- Tunisian Fiscal Invoice Modal / Card -->
+    <g transform="translate(0, 325)" filter="url(#shadow)">
+      <rect width="500" height="315" rx="16" fill="#FFFFFF" stroke="#E6DED2"/>
+      
+      <path d="M0 16 C0 7.16 7.16 0 16 0 L484 0 C492.84 0 500 7.16 500 16 L500 45 L0 45 Z" fill="#FDFBF7" stroke="#E6DED2" stroke-width="1"/>
+      <text x="25" y="28" fill="#1E1B18" font-size="13" font-weight="bold">📄 فاتورة قانونية تونسية (Facture Légale Numérotée)</text>
+      <text x="475" y="28" fill="#566B2F" font-size="11" font-weight="bold" text-anchor="end">مطابقة جبائياً ✓</text>
+
+      <g transform="translate(25, 60)">
+        <rect width="450" height="175" rx="10" fill="#FDFBF7" stroke="#E6DED2"/>
+        
+        <g transform="translate(15, 20)">
+          <text x="0" y="14" fill="#6B635A" font-size="11">رقم الفاتورة المتسلسل:</text>
+          <text x="420" y="14" fill="#1E1B18" font-size="12" font-weight="bold" text-anchor="end" class="mono">FAC-2026-00042</text>
+
+          <text x="0" y="38" fill="#6B635A" font-size="11">المعرف الجبائي للتاجر (MF):</text>
+          <text x="420" y="38" fill="#1E1B18" font-size="12" font-weight="bold" text-anchor="end" class="mono">1234567/A/M/000</text>
+
+          <text x="0" y="62" fill="#6B635A" font-size="11">المبلغ الخام دون أداء (HT):</text>
+          <text x="420" y="62" fill="#1E1B18" font-size="12" font-weight="bold" text-anchor="end" class="mono">105.042 د.ت</text>
+
+          <text x="0" y="86" fill="#6B635A" font-size="11">الأداء على القيمة المضافة (TVA 19%):</text>
+          <text x="420" y="86" fill="#1E1B18" font-size="12" font-weight="bold" text-anchor="end" class="mono">19.958 د.ت</text>
+
+          <text x="0" y="110" fill="#6B635A" font-size="11">معلوم الطابع الجبائي (Timbre Fiscal):</text>
+          <text x="420" y="110" fill="#1E1B18" font-size="12" font-weight="bold" text-anchor="end" class="mono">1.000 د.ت</text>
+
+          <line x1="0" y1="124" x2="420" y2="124" stroke="#E6DED2" stroke-width="1"/>
+
+          <text x="0" y="144" fill="#B8432A" font-size="13" font-weight="bold">الصافي للدفع (Total TTC):</text>
+          <text x="420" y="144" fill="#B8432A" font-size="16" font-weight="bold" text-anchor="end" class="mono">126.000 د.ت</text>
+        </g>
+      </g>
+
+      <!-- Download Button -->
+      <g transform="translate(25, 250)">
+        <rect width="450" height="42" rx="10" fill="#2B5C9E"/>
+        <text x="225" y="26" fill="#FFFFFF" font-size="13" font-weight="bold" text-anchor="middle">تحميل الفاتورة الرسمية (PDF Télécharger) 📥</text>
+      </g>
+    </g>
+  </g>
+</svg>

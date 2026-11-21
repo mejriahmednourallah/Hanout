@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap');
+      text { font-family: 'IBM Plex Sans Arabic', 'Inter', -apple-system, sans-serif; }
+      .en { font-family: 'Inter', sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, monospace; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1E1B18" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="780" rx="16" fill="#FBF8F3" stroke="#E6DED2" stroke-width="2"/>
+  <path d="M0 16 C0 7.16 7.16 0 16 0 L1184 0 C1192.84 0 1200 7.16 1200 16 L1200 48 L0 48 Z" fill="#F3EEE6" stroke="#E6DED2" stroke-width="1"/>
+  <circle cx="24" cy="24" r="6" fill="#FF5F56"/>
+  <circle cx="44" cy="24" r="6" fill="#FFBD2E"/>
+  <circle cx="64" cy="24" r="6" fill="#27C93F"/>
+  <rect x="240" y="10" width="720" height="28" rx="8" fill="#FFFFFF" stroke="#E6DED2"/>
+  <text x="600" y="29" fill="#6B635A" font-size="12" text-anchor="middle" class="en">🔒 https://hanout.tn/cart — سلة المشتريات مقسمة حسب الحرفيين والشحنات الفرعية</text>
+
+  <!-- Title Section -->
+  <g transform="translate(60, 80)">
+    <text x="0" y="24" fill="#1E1B18" font-size="24" font-weight="bold">سلة المشتريات (مقسمة حسب الحرفيين)</text>
+    <text x="0" y="44" fill="#6B635A" font-size="13">كل بائع يشحن طرداً مستقلاً عبر البريد السريع التونسي مع فاتورة قانونية خاصة به</text>
+  </g>
+
+  <!-- Left Column: Vendor Sub-Order Groups (680px wide) -->
+  <g transform="translate(60, 150)">
+    <!-- Vendor Group 1: Sfax Oil -->
+    <g transform="translate(0, 0)" filter="url(#shadow)">
+      <rect width="680" height="220" rx="16" fill="#FFFFFF" stroke="#E6DED2"/>
+      
+      <!-- Vendor Header -->
+      <path d="M0 16 C0 7.16 7.16 0 16 0 L664 0 C672.84 0 680 7.16 680 16 L680 50 L0 50 Z" fill="#FBF8F3" stroke="#E6DED2" stroke-width="1"/>
+      <circle cx="28" cy="25" r="12" fill="#566B2F" fill-opacity="0.15"/>
+      <text x="28" y="30" fill="#566B2F" font-size="12" font-weight="bold" text-anchor="middle">1</text>
+      <text x="50" y="30" fill="#1E1B18" font-size="14" font-weight="bold">الشحنة الأولى: معصرة صفاقس للزيت الحيوي (صفاقس)</text>
+      <rect x="540" y="13" width="120" height="24" rx="6" fill="#566B2F" fill-opacity="0.1"/>
+      <text x="600" y="29" fill="#566B2F" font-size="11" font-weight="bold" text-anchor="middle">✓ تاجر خاضع للأداء</text>
+
+      <!-- Item Row -->
+      <g transform="translate(20, 65)">
+        <rect width="70" height="70" rx="10" fill="#EAE2D5"/>
+        <text x="35" y="45" fill="#6B635A" font-size="26" text-anchor="middle">🫒</text>
+        
+        <g transform="translate(85, 12)">
+          <text x="0" y="14" fill="#1E1B18" font-size="14" font-weight="bold">زيت زيتون بكر ممتاز صفاقس 5 لتر</text>
+          <text x="0" y="32" fill="#6B635A" font-size="11">رمز: SKU-ZIT-SFAX-5L • الكمية: 1</text>
+          
+          <!-- Locked Offer Badge -->
+          <rect x="0" y="40" width="150" height="22" rx="6" fill="#D49A2A" fill-opacity="0.15" stroke="#D49A2A"/>
+          <text x="75" y="55" fill="#2A1F08" font-size="10" font-weight="bold" text-anchor="middle">⚡ سعر تفاوضي محجوز</text>
+        </g>
+
+        <!-- Price -->
+        <g transform="translate(520, 20)">
+          <text x="0" y="14" fill="#6B635A" font-size="11" text-decoration="line-through">125.000 د.ت</text>
+          <text x="0" y="36" fill="#1E1B18" font-size="18" font-weight="bold" class="mono">110.000 د.ت</text>
+        </g>
+      </g>
+
+      <!-- Sub-Order Shipping Line -->
+      <g transform="translate(20, 165)">
+        <line x1="0" y1="0" x2="640" y2="0" stroke="#E6DED2" stroke-width="1"/>
+        <text x="0" y="32" fill="#2B5C9E" font-size="12" font-weight="bold">🚚 الشحن السريع (Rapide-Poste صفاقس):</text>
+        <text x="540" y="32" fill="#1E1B18" font-size="13" font-weight="bold" class="mono">7.000 د.ت</text>
+      </g>
+    </g>
+
+    <!-- Vendor Group 2: Nabeul Harissa -->
+    <g transform="translate(0, 250)" filter="url(#shadow)">
+      <rect width="680" height="210" rx="16" fill="#FFFFFF" stroke="#E6DED2"/>
+      
+      <path d="M0 16 C0 7.16 7.16 0 16 0 L664 0 C672.84 0 680 7.16 680 16 L680 50 L0 50 Z" fill="#FBF8F3" stroke="#E6DED2" stroke-width="1"/>
+      <circle cx="28" cy="25" r="12" fill="#B8432A" fill-opacity="0.15"/>
+      <text x="28" y="30" fill="#B8432A" font-size="12" font-weight="bold" text-anchor="middle">2</text>
+      <text x="50" y="30" fill="#1E1B18" font-size="14" font-weight="bold">الشحنة الثانية: تعاونية هريسة الوطن القبلي دياري (نابل)</text>
+      <rect x="540" y="13" width="120" height="24" rx="6" fill="#566B2F" fill-opacity="0.1"/>
+      <text x="600" y="29" fill="#566B2F" font-size="11" font-weight="bold" text-anchor="middle">✓ تاجر خاضع للأداء</text>
+
+      <g transform="translate(20, 65)">
+        <rect width="70" height="70" rx="10" fill="#F4DDD8"/>
+        <text x="35" y="45" fill="#B8432A" font-size="26" text-anchor="middle">🌶️</text>
+        
+        <g transform="translate(85, 12)">
+          <text x="0" y="14" fill="#1E1B18" font-size="14" font-weight="bold">هريسة عربي أصيلة نابل دياري 1 كغ</text>
+          <text x="0" y="32" fill="#6B635A" font-size="11">رمز: SKU-HRS-NAB-1KG • الكمية: 1</text>
+          <text x="0" y="52" fill="#566B2F" font-size="11">متوفر بالمستودع</text>
+        </g>
+
+        <g transform="translate(520, 20)">
+          <text x="0" y="36" fill="#1E1B18" font-size="18" font-weight="bold" class="mono">18.500 د.ت</text>
+        </g>
+      </g>
+
+      <g transform="translate(20, 155)">
+        <line x1="0" y1="0" x2="640" y2="0" stroke="#E6DED2" stroke-width="1"/>
+        <text x="0" y="32" fill="#2B5C9E" font-size="12" font-weight="bold">🚚 الشحن السريع (Rapide-Poste نابل):</text>
+        <text x="540" y="32" fill="#1E1B18" font-size="13" font-weight="bold" class="mono">7.000 د.ت</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Column: Order Summary Card (380px wide) -->
+  <g transform="translate(770, 150)" filter="url(#shadow)">
+    <rect width="370" height="460" rx="16" fill="#FFFFFF" stroke="#E6DED2"/>
+    
+    <text x="25" y="40" fill="#1E1B18" font-size="18" font-weight="bold">ملخص الطلب الكلي</text>
+    <line x1="25" y1="58" x2="345" y2="58" stroke="#E6DED2" stroke-width="1"/>
+
+    <g transform="translate(25, 80)">
+      <text x="0" y="16" fill="#6B635A" font-size="13">مجموع المنتوجات (دون شحن):</text>
+      <text x="320" y="16" fill="#1E1B18" font-size="14" font-weight="bold" text-anchor="end" class="mono">128.500 د.ت</text>
+
+      <text x="0" y="48" fill="#566B2F" font-size="13">وفورات المساومة المباشرة:</text>
+      <text x="320" y="48" fill="#566B2F" font-size="14" font-weight="bold" text-anchor="end" class="mono">-15.000 د.ت</text>
+
+      <text x="0" y="80" fill="#6B635A" font-size="13">شحن سريع شحنتين (2 × 7 DT):</text>
+      <text x="320" y="80" fill="#1E1B18" font-size="14" font-weight="bold" text-anchor="end" class="mono">14.000 د.ت</text>
+
+      <text x="0" y="112" fill="#6B635A" font-size="13">الطابع الجبائي (Timbre fiscal):</text>
+      <text x="320" y="112" fill="#1E1B18" font-size="14" font-weight="bold" text-anchor="end" class="mono">1.000 د.ت</text>
+
+      <line x1="0" y1="135" x2="320" y2="135" stroke="#E6DED2" stroke-width="1"/>
+
+      <text x="0" y="165" fill="#1E1B18" font-size="16" font-weight="bold">المجموع الجملي (TTC):</text>
+      <text x="320" y="165" fill="#B8432A" font-size="22" font-weight="bold" text-anchor="end" class="mono">143.500 د.ت</text>
+    </g>
+
+    <!-- Payment Badge Reassurance -->
+    <g transform="translate(25, 280)">
+      <rect width="320" height="50" rx="10" fill="#FBF8F3" stroke="#E6DED2"/>
+      <text x="15" y="24" fill="#566B2F" font-size="12" font-weight="bold">💵 الدفع عند الاستلام نقداً (COD)</text>
+      <text x="15" y="40" fill="#6B635A" font-size="10">تدفع مباشرة لعون البريد بعد معاينة الطرد</text>
+    </g>
+
+    <!-- Checkout Button -->
+    <g transform="translate(25, 360)">
+      <rect width="320" height="52" rx="12" fill="#B8432A"/>
+      <text x="160" y="32" fill="#FFFFFF" font-size="15" font-weight="bold" text-anchor="middle">المواصلة لبيانات التوصيل ←</text>
+    </g>
+  </g>
+</svg>
