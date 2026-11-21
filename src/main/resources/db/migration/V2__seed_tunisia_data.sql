@@ -126,3 +126,5 @@ INSERT INTO skus (id, product_id, sku_code, price_millimes, stock_on_hand, reser
 -- Vendor 2 default policy
 INSERT INTO haggling_policies (id, vendor_id, product_id, auto_accept_pct, auto_reject_pct, max_rounds, offer_ttl_hours, price_lock_minutes, floor_millimes) VALUES
 (4, 2, 4, 90.0, 70.0, 3, 24, 30, 35000);
+
+

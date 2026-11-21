@@ -222,7 +222,7 @@ CREATE TABLE invoices (
     vendor_order_id BIGINT NOT NULL REFERENCES vendor_orders(id),
     invoice_number VARCHAR(64) NOT NULL UNIQUE,
     sequence_number BIGINT NOT NULL,
-    year INT NOT NULL,
+    fiscal_year INT NOT NULL,
     customer_name VARCHAR(255) NOT NULL,
     customer_address TEXT NOT NULL,
     customer_tax_id VARCHAR(64),
@@ -233,7 +233,7 @@ CREATE TABLE invoices (
     total_ttc BIGINT NOT NULL,
     status VARCHAR(32) NOT NULL DEFAULT 'ISSUED',
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    CONSTRAINT uk_vendor_seq_year UNIQUE (vendor_id, year, sequence_number)
+    CONSTRAINT uk_vendor_seq_year UNIQUE (vendor_id, fiscal_year, sequence_number)
 );
 
 CREATE TABLE invoice_lines (
@@ -275,3 +275,14 @@ CREATE INDEX idx_reservations_expires ON stock_reservations(status, expires_at);
 CREATE INDEX idx_product_i18n_locale ON product_i18n(locale, name);
 CREATE INDEX idx_product_aliases_alias ON product_aliases(alias);
 CREATE INDEX idx_ledger_ref ON ledger_entries(ref_type, ref_id);
+
+-- 12. Spring Modulith Event Publication Registry (Outbox Pattern)
+CREATE TABLE IF NOT EXISTS event_publication (
+    id UUID NOT NULL,
+    listener_id VARCHAR(512) NOT NULL,
+    event_type VARCHAR(512) NOT NULL,
+    serialized_event TEXT NOT NULL,
+    publication_date TIMESTAMP NOT NULL,
+    completion_date TIMESTAMP,
+    PRIMARY KEY (id)
+);
