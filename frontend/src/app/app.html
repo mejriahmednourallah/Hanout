@@ -1,0 +1,182 @@
+<div class="min-h-screen bg-background text-foreground flex flex-col font-sans selection:bg-primary/20 selection:text-primary">
+  <!-- Top Global Header -->
+  <header class="sticky top-0 z-40 bg-card/90 backdrop-blur border-b border-border transition">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <!-- Brand Logo & Subtitle -->
+      <a routerLink="/" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-2xl bg-primary flex items-center justify-center text-white font-serif font-black text-2xl shadow-sm group-hover:scale-105 transition">
+          ح
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-2xl font-black text-primary tracking-tight flex items-center gap-2">
+            {{ i18n.t('app.title') }}
+            <span class="text-[10px] font-sans px-2 py-0.5 rounded-full bg-haggle/15 text-haggle font-bold uppercase tracking-wider">
+              مساومة تونسية
+            </span>
+          </span>
+          <span class="text-[11px] text-muted-foreground hidden sm:block">
+            {{ i18n.t('app.subtitle') }}
+          </span>
+        </div>
+      </a>
+
+      <!-- Center Navigation Links -->
+      <nav class="hidden md:flex items-center gap-1 bg-muted/50 p-1.5 rounded-xl border border-border text-xs font-semibold">
+        <a 
+          routerLink="/" 
+          routerLinkActive="bg-card text-foreground shadow-xs" 
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="px-3.5 py-1.5 rounded-lg text-muted-foreground hover:text-foreground transition"
+        >
+          {{ i18n.t('nav.home') }}
+        </a>
+        <a 
+          routerLink="/search" 
+          routerLinkActive="bg-card text-foreground shadow-xs" 
+          class="px-3.5 py-1.5 rounded-lg text-muted-foreground hover:text-foreground transition"
+        >
+          {{ i18n.t('nav.catalog') }}
+        </a>
+        <a 
+          routerLink="/orders" 
+          routerLinkActive="bg-card text-foreground shadow-xs" 
+          class="px-3.5 py-1.5 rounded-lg text-muted-foreground hover:text-foreground transition"
+        >
+          {{ i18n.t('nav.orders') }}
+        </a>
+        <a 
+          routerLink="/vendor" 
+          routerLinkActive="bg-card text-foreground shadow-xs" 
+          class="px-3.5 py-1.5 rounded-lg text-muted-foreground hover:text-foreground transition flex items-center gap-1.5"
+        >
+          <span>{{ i18n.t('nav.vendor') }}</span>
+          <span *ngIf="api.pendingVendorOffers().length > 0" class="w-2 h-2 rounded-full bg-haggle animate-ping"></span>
+        </a>
+      </nav>
+
+      <!-- Right Action Items (Language Switcher & Cart) -->
+      <div class="flex items-center gap-3">
+        <!-- Language Switcher Pill -->
+        <div class="flex items-center bg-muted border border-border rounded-xl p-1 text-xs font-semibold">
+          <button 
+            (click)="setLanguage('ar')"
+            [ngClass]="i18n.currentLang() === 'ar' ? 'bg-card text-foreground shadow-xs' : 'text-muted-foreground hover:text-foreground'"
+            class="px-2.5 py-1 rounded-lg transition"
+          >
+            عربي
+          </button>
+          <button 
+            (click)="setLanguage('fr')"
+            [ngClass]="i18n.currentLang() === 'fr' ? 'bg-card text-foreground shadow-xs' : 'text-muted-foreground hover:text-foreground'"
+            class="px-2.5 py-1 rounded-lg transition"
+          >
+            FR
+          </button>
+          <button 
+            (click)="setLanguage('en')"
+            [ngClass]="i18n.currentLang() === 'en' ? 'bg-card text-foreground shadow-xs' : 'text-muted-foreground hover:text-foreground'"
+            class="px-2.5 py-1 rounded-lg transition"
+          >
+            EN
+          </button>
+        </div>
+
+        <!-- Cart Button -->
+        <a 
+          routerLink="/cart"
+          class="relative p-2.5 bg-card hover:bg-muted border border-border text-foreground rounded-xl transition flex items-center justify-center shadow-xs group"
+          title="سلة المشتريات"
+        >
+          <svg class="w-5 h-5 text-foreground group-hover:scale-105 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <span 
+            *ngIf="getCartCount() > 0" 
+            class="absolute -top-1.5 -end-1.5 min-w-[1.25rem] h-5 px-1 bg-primary text-white text-[11px] font-bold rounded-full flex items-center justify-center font-mono animate-bounce"
+          >
+            {{ getCartCount() }}
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Bar -->
+  <div class="md:hidden bg-card border-b border-border px-4 py-2 flex items-center justify-around text-xs font-semibold">
+    <a routerLink="/" routerLinkActive="text-primary" [routerLinkActiveOptions]="{ exact: true }" class="text-muted-foreground py-1">
+      {{ i18n.t('nav.home') }}
+    </a>
+    <a routerLink="/search" routerLinkActive="text-primary" class="text-muted-foreground py-1">
+      {{ i18n.t('nav.catalog') }}
+    </a>
+    <a routerLink="/orders" routerLinkActive="text-primary" class="text-muted-foreground py-1">
+      {{ i18n.t('nav.orders') }}
+    </a>
+    <a routerLink="/vendor" routerLinkActive="text-primary" class="text-muted-foreground py-1 flex items-center gap-1">
+      {{ i18n.t('nav.vendor') }}
+      <span *ngIf="api.pendingVendorOffers().length > 0" class="w-1.5 h-1.5 rounded-full bg-haggle"></span>
+    </a>
+  </div>
+
+  <!-- Main View Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <router-outlet />
+  </main>
+
+  <!-- Authentic Footer -->
+  <footer class="bg-card border-t border-border mt-16 relative overflow-hidden">
+    <div class="absolute inset-0 bg-zellige opacity-30 pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10 space-y-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="space-y-3 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="w-8 h-8 rounded-xl bg-primary text-white flex items-center justify-center font-serif font-black text-lg">
+              ح
+            </span>
+            <span class="font-serif text-xl font-bold text-foreground">حانوت (Hanout)</span>
+          </div>
+          <p class="text-xs text-muted-foreground max-w-md leading-relaxed">
+            منصة التجارة الإلكترونية التونسية المصممة للحرفيين والمنتجين المحليين. تجمع بين كرم التقاليد وحرية المساومة الحية مع موثوقية الدفع عند الاستلام والشحن السريع لكافة معتمديات الجمهورية التونسية.
+          </p>
+        </div>
+
+        <div class="space-y-2 text-xs">
+          <h5 class="font-semibold text-foreground uppercase tracking-wider">الولايات والجهات</h5>
+          <ul class="space-y-1.5 text-muted-foreground">
+            <li><a routerLink="/search" [queryParams]="{ gov: 'صفاقس' }" class="hover:text-primary transition">معاصر زيت صفاقس</a></li>
+            <li><a routerLink="/search" [queryParams]="{ gov: 'نابل' }" class="hover:text-primary transition">هريسة وفخار نابل</a></li>
+            <li><a routerLink="/search" [queryParams]="{ gov: 'توزر' }" class="hover:text-primary transition">تمور دقلة النور توزر</a></li>
+            <li><a routerLink="/search" [queryParams]="{ gov: 'مدنين' }" class="hover:text-primary transition">حرف وفخار قلالة جربة</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2 text-xs">
+          <h5 class="font-semibold text-foreground uppercase tracking-wider">الأمان والمطابقة</h5>
+          <div class="space-y-1.5 text-muted-foreground">
+            <div class="flex items-center gap-2 text-success font-medium">
+              <span>✓</span> الدفع عند الاستلام (COD)
+            </div>
+            <div class="flex items-center gap-2 text-info font-medium">
+              <span>✓</span> الربط المباشر مع Rapide-Poste
+            </div>
+            <div class="flex items-center gap-2 text-foreground font-medium">
+              <span>✓</span> فواتير قانونية بالمعرف الجبائي
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-border pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-muted-foreground gap-4">
+        <div>
+          © 2026 حانوت (Hanout). صُنع في الجمهورية التونسية بكل فخر.
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-muted border border-border text-[11px] font-mono">
+            <span class="w-2 h-2 rounded-full bg-success"></span>
+            Spring Modulith + Angular
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
