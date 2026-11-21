@@ -7,7 +7,7 @@
       .mono { font-family: ui-monospace, SFMono-Regular, monospace; }
     </style>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1E1B18" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1E1B18" flood-opacity="0.06"/>
     </filter>
     <filter id="modalShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
       <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#1E1B18" flood-opacity="0.25"/>
@@ -20,7 +20,7 @@
   <circle cx="44" cy="24" r="6" fill="#FFBD2E"/>
   <circle cx="64" cy="24" r="6" fill="#27C93F"/>
   <rect x="240" y="10" width="720" height="28" rx="8" fill="#FFFFFF" stroke="#E6DED2"/>
-  <text x="600" y="29" fill="#6B635A" font-size="12" text-anchor="middle" class="en">🔒 https://hanout.tn/checkout — تأكيد الطلب وعنوان التوصيل التونسي والتحقق عبر SMS OTP</text>
+  <text x="600" y="29" fill="#6B635A" font-size="12" text-anchor="middle" class="en">https://hanout.tn/checkout — تأكيد الطلب وعنوان التوصيل التونسي والتحقق عبر SMS OTP</text>
 
   <!-- Left: Checkout Form (640px) -->
   <g transform="translate(60, 80)">
@@ -52,13 +52,13 @@
           <text x="0" y="14" fill="#1E1B18" font-size="12" font-weight="600">الولاية:</text>
           <rect x="0" y="24" width="250" height="42" rx="8" fill="#FFFFFF" stroke="#B8432A" stroke-width="1.5"/>
           <text x="15" y="50" fill="#1E1B18" font-size="13" font-weight="bold">تونس (Tunis)</text>
-          <text x="230" y="50" fill="#6B635A" font-size="12">▼</text>
+          <path d="M228 46 L233 51 L238 46" stroke="#6B635A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
         </g>
         <g transform="translate(270, 0)">
           <text x="0" y="14" fill="#1E1B18" font-size="12" font-weight="600">المعتمدية:</text>
           <rect x="0" y="24" width="250" height="42" rx="8" fill="#FFFFFF" stroke="#E6DED2"/>
           <text x="15" y="50" fill="#1E1B18" font-size="13">باب سويقة</text>
-          <text x="230" y="50" fill="#6B635A" font-size="12">▼</text>
+          <path d="M228 46 L233 51 L238 46" stroke="#6B635A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
         </g>
       </g>
 
@@ -80,10 +80,10 @@
       <g transform="translate(30, 425)">
         <text x="0" y="14" fill="#1E1B18" font-size="12" font-weight="600">طريقة الدفع:</text>
         <rect x="0" y="24" width="250" height="46" rx="8" fill="#FDF8ED" stroke="#D49A2A" stroke-width="1.5"/>
-        <text x="15" y="52" fill="#2A1F08" font-size="12" font-weight="bold">● الدفع عند الاستلام (COD)</text>
+        <text x="15" y="52" fill="#2A1F08" font-size="12" font-weight="bold">الدفع عند الاستلام (COD)</text>
 
         <rect x="270" y="24" width="250" height="46" rx="8" fill="#FBF8F3" stroke="#E6DED2"/>
-        <text x="285" y="52" fill="#6B635A" font-size="12">○ دفع إلكتروني (Konnect)</text>
+        <text x="285" y="52" fill="#6B635A" font-size="12">دفع إلكتروني (Konnect)</text>
       </g>
 
       <!-- Place Order CTA -->
@@ -94,26 +94,31 @@
     </g>
   </g>
 
-  <!-- Right: Active Backdrop Overlay + SMS OTP Verification Modal -->
+  <!-- Right: SMS OTP Verification Modal -->
   <g transform="translate(680, 110)">
-    <!-- Modal Card (460px) -->
     <g transform="translate(0, 0)" filter="url(#modalShadow)">
       <rect width="460" height="520" rx="20" fill="#FFFFFF" stroke="#E6DED2" stroke-width="2"/>
       
-      <!-- Modal Top Icon -->
-      <circle cx="230" cy="60" r="32" fill="#D49A2A" fill-opacity="0.15"/>
-      <text x="230" y="70" fill="#D49A2A" font-size="30" text-anchor="middle">📱</text>
+      <!-- Modal Top Vector Icon -->
+      <circle cx="230" cy="60" r="30" fill="#D49A2A" fill-opacity="0.15"/>
+      <g transform="translate(218, 45)">
+        <rect width="24" height="34" rx="4" stroke="#D49A2A" stroke-width="2" fill="none"/>
+        <circle cx="12" cy="27" r="1.5" fill="#D49A2A"/>
+      </g>
 
       <!-- Modal Title -->
       <text x="230" y="125" fill="#1E1B18" font-size="19" font-weight="bold" text-anchor="middle">تأكيد رمز التحقق (SMS OTP)</text>
       <text x="230" y="150" fill="#6B635A" font-size="12" text-anchor="middle">أرسلنا رمز تأكيد مكوناً من 6 أرقام إلى هاتفك:</text>
       <text x="230" y="172" fill="#B8432A" font-size="15" font-weight="bold" text-anchor="middle" class="mono">+216 98 123 456</text>
 
-      <!-- Why OTP Box -->
+      <!-- Why OTP Box with Shield Vector -->
       <g transform="translate(35, 195)">
         <rect width="390" height="52" rx="10" fill="#FDFBF7" stroke="#E6DED2"/>
-        <text x="15" y="24" fill="#566B2F" font-size="11" font-weight="bold">🛡️ محرك الأمان ومكافحة الاحتيال (Risk Engine):</text>
-        <text x="15" y="40" fill="#6B635A" font-size="10">هذا الإجراء يضمن حماية الحرفيين التونسيين من الطلبات الوهمية.</text>
+        <g transform="translate(15, 16)">
+          <path d="M0 4 L8 0 L16 4 V10 C16 15 8 19 8 19 C8 19 0 15 0 10 Z" stroke="#566B2F" stroke-width="1.5" fill="none"/>
+        </g>
+        <text x="40" y="24" fill="#566B2F" font-size="11" font-weight="bold">محرك الأمان ومكافحة الاحتيال (Risk Engine):</text>
+        <text x="40" y="40" fill="#6B635A" font-size="10">هذا الإجراء يضمن حماية الحرفيين التونسيين من الطلبات الوهمية.</text>
       </g>
 
       <!-- 6-Digit OTP Boxes -->
@@ -143,7 +148,7 @@
       <!-- Verify Button -->
       <g transform="translate(35, 400)">
         <rect width="390" height="52" rx="12" fill="#566B2F"/>
-        <text x="195" y="32" fill="#FFFFFF" font-size="15" font-weight="bold" text-anchor="middle">تأكيد الرمز وإصدار الشحنات ✓</text>
+        <text x="195" y="32" fill="#FFFFFF" font-size="15" font-weight="bold" text-anchor="middle">تأكيد الرمز وإصدار الشحنات</text>
       </g>
 
       <text x="230" y="485" fill="#6B635A" font-size="11" text-anchor="middle">تشفير كامل وحماية لبيانات الدفع والتوصيل</text>

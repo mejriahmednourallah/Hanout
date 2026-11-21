@@ -19,8 +19,10 @@ import { CartLine } from '../../core/models';
 
       @if (cart().lines.length === 0) {
         <div class="p-12 text-center rounded-2xl border border-[#E6DED2] bg-[#FFFFFF] bg-zellige space-y-4">
-          <div class="w-12 h-12 mx-auto rounded-full bg-[#F3EEE6] flex items-center justify-center text-xl text-[#6B635A]">
-            🛒
+          <div class="w-12 h-12 mx-auto rounded-full bg-[#F3EEE6] flex items-center justify-center text-[#6B635A]">
+            <svg class="w-6 h-6 text-[#6B635A]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
           </div>
           <h3 class="text-base font-semibold text-[#1E1B18]">{{ i18n.t('cart.empty') }}</h3>
           <p class="text-xs text-[#6B635A] max-w-sm mx-auto">{{ i18n.t('cart.empty_desc') }}</p>
@@ -57,8 +59,11 @@ import { CartLine } from '../../core/models';
                             {{ line.productName || line.skuCode }}
                           </h4>
                           @if (line.isOfferLocked) {
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-[#D49A2A]/20 text-[#2A1F08]">
-                              🔒 {{ i18n.t('cart.locked_price_badge') }}
+                            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-[#D49A2A]/20 text-[#2A1F08]">
+                              <svg class="w-3 h-3 text-[#2A1F08]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                              </svg>
+                              {{ i18n.t('cart.locked_price_badge') }}
                             </span>
                           }
                         </div>

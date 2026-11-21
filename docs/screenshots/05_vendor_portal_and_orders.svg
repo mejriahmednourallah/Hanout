@@ -17,7 +17,7 @@
   <circle cx="44" cy="24" r="6" fill="#FFBD2E"/>
   <circle cx="64" cy="24" r="6" fill="#27C93F"/>
   <rect x="240" y="10" width="720" height="28" rx="8" fill="#FFFFFF" stroke="#E6DED2"/>
-  <text x="600" y="29" fill="#6B635A" font-size="12" text-anchor="middle" class="en">🔒 https://hanout.tn/vendor — فضاء إدارة التاجر وتتبع الشحنات والفاتورة القانونية التونسية</text>
+  <text x="600" y="29" fill="#6B635A" font-size="12" text-anchor="middle" class="en">https://hanout.tn/vendor — فضاء إدارة التاجر وتتبع الشحنات والفاتورة القانونية التونسية</text>
 
   <!-- Left: Vendor Portal (560px) -->
   <g transform="translate(60, 75)">
@@ -118,17 +118,21 @@
 
         <!-- Step 1: Placed -->
         <circle cx="20" cy="20" r="14" fill="#566B2F"/>
-        <text x="20" y="24" fill="#FFFFFF" font-size="11" text-anchor="middle">✓</text>
+        <polyline points="16,20 19,23 25,17" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none"/>
         <text x="20" y="50" fill="#1E1B18" font-size="11" font-weight="bold" text-anchor="middle">تم التسجيل</text>
 
         <!-- Step 2: Confirmed -->
         <circle cx="150" cy="20" r="14" fill="#566B2F"/>
-        <text x="150" y="24" fill="#FFFFFF" font-size="11" text-anchor="middle">✓</text>
+        <polyline points="146,20 149,23 155,17" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none"/>
         <text x="150" y="50" fill="#1E1B18" font-size="11" font-weight="bold" text-anchor="middle">تأكيد التاجر</text>
 
-        <!-- Step 3: Shipped (Active) -->
+        <!-- Step 3: Shipped (Active) with Truck Vector -->
         <circle cx="280" cy="20" r="16" fill="#2B5C9E"/>
-        <text x="280" y="24" fill="#FFFFFF" font-size="11" text-anchor="middle">🚚</text>
+        <g transform="translate(272, 13)">
+          <path d="M0 3 H10 V11 H0 Z M10 5 H14 L16 8 V11 H10 Z" stroke="#FFFFFF" stroke-width="1.2" fill="none"/>
+          <circle cx="4" cy="12" r="1.5" fill="#FFFFFF"/>
+          <circle cx="13" cy="12" r="1.5" fill="#FFFFFF"/>
+        </g>
         <text x="280" y="50" fill="#2B5C9E" font-size="11" font-weight="bold" text-anchor="middle">مع الشاحن</text>
 
         <!-- Step 4: Delivered -->
@@ -139,7 +143,7 @@
 
       <g transform="translate(25, 160)">
         <rect width="450" height="55" rx="10" fill="#FBF8F3" stroke="#E6DED2"/>
-        <text x="15" y="24" fill="#2B5C9E" font-size="12" font-weight="bold">📍 آخر تحديث من مركز التوزيع بتونس العاصمة:</text>
+        <text x="15" y="24" fill="#2B5C9E" font-size="12" font-weight="bold">آخر تحديث من مركز التوزيع بتونس العاصمة:</text>
         <text x="15" y="42" fill="#6B635A" font-size="11">الطرد في عهدة ساعي البريد، التسليم متوقع اليوم بين 14:00 و 17:00.</text>
       </g>
     </g>
@@ -149,8 +153,8 @@
       <rect width="500" height="315" rx="16" fill="#FFFFFF" stroke="#E6DED2"/>
       
       <path d="M0 16 C0 7.16 7.16 0 16 0 L484 0 C492.84 0 500 7.16 500 16 L500 45 L0 45 Z" fill="#FDFBF7" stroke="#E6DED2" stroke-width="1"/>
-      <text x="25" y="28" fill="#1E1B18" font-size="13" font-weight="bold">📄 فاتورة قانونية تونسية (Facture Légale Numérotée)</text>
-      <text x="475" y="28" fill="#566B2F" font-size="11" font-weight="bold" text-anchor="end">مطابقة جبائياً ✓</text>
+      <text x="25" y="28" fill="#1E1B18" font-size="13" font-weight="bold">فاتورة قانونية تونسية (Facture Légale Numérotée)</text>
+      <text x="475" y="28" fill="#566B2F" font-size="11" font-weight="bold" text-anchor="end">مطابقة جبائياً</text>
 
       <g transform="translate(25, 60)">
         <rect width="450" height="175" rx="10" fill="#FDFBF7" stroke="#E6DED2"/>
@@ -178,10 +182,13 @@
         </g>
       </g>
 
-      <!-- Download Button -->
+      <!-- Download Button with SVG Download Icon -->
       <g transform="translate(25, 250)">
         <rect width="450" height="42" rx="10" fill="#2B5C9E"/>
-        <text x="225" y="26" fill="#FFFFFF" font-size="13" font-weight="bold" text-anchor="middle">تحميل الفاتورة الرسمية (PDF Télécharger) 📥</text>
+        <g transform="translate(130, 13)">
+          <path d="M0 12 H16 M8 0 V10 M4 6 L8 10 L12 6" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        </g>
+        <text x="245" y="26" fill="#FFFFFF" font-size="13" font-weight="bold" text-anchor="middle">تحميل الفاتورة الرسمية (PDF Télécharger)</text>
       </g>
     </g>
   </g>

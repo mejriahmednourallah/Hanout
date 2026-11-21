@@ -111,7 +111,10 @@ import { MoneyPipe } from '../../shared/ui/money.pipe';
                   <div class="space-y-1">
                     <div class="w-6 h-6 rounded-full mx-auto flex items-center justify-center text-xs font-bold"
                       [ngClass]="getStepClass(sub.status, 1)">
-                      ✓
+                      <svg *ngIf="isStepDone(sub.status, 1); else step1" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <ng-template #step1>1</ng-template>
                     </div>
                     <span class="text-[11px] font-medium block text-foreground">تم التسجيل</span>
                   </div>
@@ -120,7 +123,10 @@ import { MoneyPipe } from '../../shared/ui/money.pipe';
                   <div class="space-y-1">
                     <div class="w-6 h-6 rounded-full mx-auto flex items-center justify-center text-xs font-bold"
                       [ngClass]="getStepClass(sub.status, 2)">
-                      {{ getStepNumber(sub.status, 2) }}
+                      <svg *ngIf="isStepDone(sub.status, 2); else step2" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <ng-template #step2>2</ng-template>
                     </div>
                     <span class="text-[11px] font-medium block text-foreground">تأكيد الحرفي</span>
                   </div>
@@ -129,7 +135,10 @@ import { MoneyPipe } from '../../shared/ui/money.pipe';
                   <div class="space-y-1">
                     <div class="w-6 h-6 rounded-full mx-auto flex items-center justify-center text-xs font-bold"
                       [ngClass]="getStepClass(sub.status, 3)">
-                      {{ getStepNumber(sub.status, 3) }}
+                      <svg *ngIf="isStepDone(sub.status, 3); else step3" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <ng-template #step3>3</ng-template>
                     </div>
                     <span class="text-[11px] font-medium block text-foreground">مع الشاحن</span>
                   </div>
@@ -138,7 +147,10 @@ import { MoneyPipe } from '../../shared/ui/money.pipe';
                   <div class="space-y-1">
                     <div class="w-6 h-6 rounded-full mx-auto flex items-center justify-center text-xs font-bold"
                       [ngClass]="getStepClass(sub.status, 4)">
-                      {{ getStepNumber(sub.status, 4) }}
+                      <svg *ngIf="isStepDone(sub.status, 4); else step4" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <ng-template #step4>4</ng-template>
                     </div>
                     <span class="text-[11px] font-medium block text-foreground">تم التسليم والتحصيل</span>
                   </div>
@@ -176,7 +188,11 @@ import { MoneyPipe } from '../../shared/ui/money.pipe';
             <h3 class="font-serif font-bold text-foreground text-lg">
               فاتورة قانونية تونسية (Facture Légale)
             </h3>
-            <button (click)="activeInvoiceModal.set(null)" class="text-muted-foreground hover:text-foreground">✕</button>
+            <button (click)="activeInvoiceModal.set(null)" class="text-muted-foreground hover:text-foreground p-1 rounded-lg hover:bg-muted transition">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
           </div>
 
           <div class="space-y-3 text-xs text-foreground font-mono bg-muted/30 p-4 rounded-xl border border-border">
@@ -255,9 +271,8 @@ export class OrdersComponent implements OnInit {
     return 'bg-muted text-muted-foreground border border-border';
   }
 
-  getStepNumber(status: string, step: number): string {
-    const level = this.getStatusLevel(status);
-    return level >= step ? '✓' : `${step}`;
+  isStepDone(status: string, step: number): boolean {
+    return this.getStatusLevel(status) >= step;
   }
 
   private getStatusLevel(status: string): number {

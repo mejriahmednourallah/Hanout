@@ -26,7 +26,7 @@ interface GovOption { id: number; nameAr: string; nameFr: string; delegations: {
           </label>
           <div class="relative flex rounded-xl border border-[#E6DED2] overflow-hidden bg-[#FBF8F3]">
             <span class="inline-flex items-center px-4 bg-[#F3EEE6] text-xs font-bold text-[#1E1B18] border-e border-[#E6DED2] select-none">
-              🇹🇳 +216
+              +216
             </span>
             <input 
               type="tel"
@@ -174,8 +174,10 @@ interface GovOption { id: number; nameAr: string; nameFr: string; delegations: {
         <div class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 backdrop-blur-[2px]">
           <div class="bg-[#FFFFFF] border border-[#E6DED2] rounded-2xl p-6 max-w-md w-full shadow-2xl space-y-4">
             <div class="text-center space-y-1">
-              <span class="w-10 h-10 mx-auto rounded-full bg-[#B8432A]/10 text-[#B8432A] flex items-center justify-center text-lg">
-                🔐
+              <span class="w-10 h-10 mx-auto rounded-full bg-[#B8432A]/10 text-[#B8432A] flex items-center justify-center">
+                <svg class="w-5 h-5 text-[#B8432A]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
               </span>
               <h3 class="text-lg font-bold text-[#1E1B18]">{{ i18n.t('checkout.otp_title') }}</h3>
               <p class="text-xs text-[#6B635A]">{{ i18n.t('checkout.otp_desc') }} ({{ phone }})</p>

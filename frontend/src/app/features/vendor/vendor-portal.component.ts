@@ -19,8 +19,11 @@ import { Offer, Product } from '../../core/models';
           <h1 class="text-2xl font-serif font-bold text-[#1E1B18]">{{ i18n.t('vendor.title') }}</h1>
           <span class="text-xs text-[#6B635A]">معصرة الجنوب بصفاقس (معرّف جبائي: 1234567/A/M/000)</span>
         </div>
-        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-[#566B2F]/10 text-[#566B2F] border border-[#566B2F]/20">
-          ✓ تاجر معتمد وخاضع للأداء (TVA 19%)
+        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-[#566B2F]/10 text-[#566B2F] border border-[#566B2F]/20 inline-flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-[#566B2F]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+          </svg>
+          تاجر معتمد وخاضع للأداء (TVA 19%)
         </span>
       </div>
 
@@ -64,7 +67,11 @@ import { Offer, Product } from '../../core/models';
 
         @if (pendingOffers().length === 0) {
           <div class="p-12 text-center bg-zellige space-y-2">
-            <span class="text-2xl">✨</span>
+            <div class="w-10 h-10 mx-auto rounded-full bg-emerald-50 text-success flex items-center justify-center">
+              <svg class="w-5 h-5 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
             <h3 class="text-sm font-semibold text-[#1E1B18]">لا توجد عروض معلقة حالياً</h3>
             <p class="text-xs text-[#6B635A]">جميع عروض المساومة تمت معالجتها بنجاح.</p>
           </div>
@@ -98,7 +105,10 @@ import { Offer, Product } from '../../core/models';
                     (click)="accept(offer.id)"
                     class="py-2.5 px-4 rounded-xl text-xs font-semibold bg-[#566B2F] text-[#FFFFFF] hover:bg-[#566B2F]/90 transition-colors shadow-sm flex items-center gap-1.5"
                   >
-                    ✓ {{ i18n.t('vendor.accept') }}
+                    <svg class="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {{ i18n.t('vendor.accept') }}
                   </button>
                   <button 
                     type="button"

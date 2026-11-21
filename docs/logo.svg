@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" fill="none">
+  <!-- Background Zellige / Ceramic Rounded Seal -->
+  <rect width="128" height="128" rx="28" fill="#B8432A"/>
+  
+  <!-- Subtle Internal Hairline Geometric Inset -->
+  <rect x="8" y="8" width="112" height="112" rx="22" stroke="#FBF8F3" stroke-opacity="0.25" stroke-width="2"/>
+  
+  <!-- Tunisian Arch / Bab Top Curve -->
+  <path d="M40 38 C40 28, 88 28, 88 38" stroke="#D49A2A" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="64" cy="30" r="3.5" fill="#D49A2A"/>
+
+  <!-- Stylized Arabic 'Haa' (ح) Calligraphy with Balanced Weight -->
+  <path d="M44 50 C48 46, 76 45, 84 46 C87 46.5, 90 49, 88 53 C85 59, 64 68, 54 75 C45 81, 44 94, 55 98 C66 102, 82 96, 88 88" 
+        stroke="#FBF8F3" 
+        stroke-width="9" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Saffron Accent Dot / Nuqta -->
+  <circle cx="68" cy="80" r="4.5" fill="#D49A2A"/>
+</svg>

@@ -186,7 +186,12 @@ import { MoneyPipe } from '../../shared/ui/money.pipe';
                   تعاونية خيرات {{ product()?.governorate }} الحرفية
                 </h4>
                 <div class="flex items-center gap-2 text-xs text-muted-foreground">
-                  <span class="text-success font-medium">✓ تاجر موثق وخاضع للضريبة</span>
+                  <span class="text-success font-medium inline-flex items-center gap-1">
+                    <svg class="w-3.5 h-3.5 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    تاجر موثق وخاضع للضريبة
+                  </span>
                   <span>•</span>
                   <span>يرد خلال أقل من ساعتين</span>
                 </div>

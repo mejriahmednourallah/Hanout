@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 780" width="1200" height="780">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap');
@@ -9,6 +9,7 @@
     <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
       <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1E1B18" flood-opacity="0.08"/>
     </filter>
+    <clipPath id="prodThumbClip"><rect width="56" height="72" rx="8"/></clipPath>
   </defs>
 
   <!-- Browser Window Wrapper -->
@@ -20,19 +21,18 @@
   <circle cx="44" cy="24" r="6" fill="#FFBD2E"/>
   <circle cx="64" cy="24" r="6" fill="#27C93F"/>
   <rect x="240" y="10" width="720" height="28" rx="8" fill="#FFFFFF" stroke="#E6DED2"/>
-  <text x="600" y="29" fill="#6B635A" font-size="12" text-anchor="middle" class="en">🔒 https://hanout.tn/product/sfax-extra-virgin-olive-oil-5l#haggle — محرك المساومة وحجز الأسعار</text>
+  <text x="600" y="29" fill="#6B635A" font-size="12" text-anchor="middle" class="en">https://hanout.tn/product/sfax-extra-virgin-olive-oil-5l#haggle — محرك المساومة وحجز الأسعار</text>
 
   <!-- Title Banner -->
   <g transform="translate(60, 75)">
     <rect x="0" y="0" width="1080" height="60" rx="12" fill="#FFFFFF" stroke="#E6DED2"/>
-    <text x="30" y="36" fill="#D49A2A" font-size="20">⚡</text>
-    <text x="65" y="37" fill="#1E1B18" font-size="18" font-weight="bold">محرك المساومة التونسية (The Tunisian Haggling Engine)</text>
+    <circle cx="45" cy="30" r="14" fill="#D49A2A" fill-opacity="0.15"/>
+    <path d="M40 24 L50 36 M50 24 L40 36" stroke="#D49A2A" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="75" y="37" fill="#1E1B18" font-size="18" font-weight="bold">محرك المساومة التونسية (The Tunisian Haggling Engine)</text>
     <text x="600" y="37" fill="#6B635A" font-size="13">مفاوضة فورية • حجز مخزون ذكي على القبول • عد تنازلي وتأمين السعر</text>
   </g>
 
-  <!-- Two Columns: Left = Offer Sheet, Right = Thread & Price Lock -->
-  
-  <!-- LEFT COLUMN: Offer Sheet Drawer (480px wide) -->
+  <!-- LEFT COLUMN: Offer Sheet Drawer (520px wide) -->
   <g transform="translate(60, 160)" filter="url(#cardShadow)">
     <rect width="520" height="570" rx="16" fill="#FFFFFF" stroke="#E6DED2"/>
     
@@ -41,28 +41,41 @@
     <text x="30" y="38" fill="#1E1B18" font-size="17" font-weight="bold">مساومة على السعر: زيت زيتون بكر ممتاز 5 لتر</text>
     <text x="30" y="54" fill="#6B635A" font-size="11">معصرة صفاقس الأصيلة • السعر الأصلي: 125.000 د.ت</text>
     <circle cx="485" cy="32" r="14" fill="#F3EEE6"/>
-    <text x="485" y="37" fill="#6B635A" font-size="14" text-anchor="middle">✕</text>
+    <path d="M479 26 L491 38 M491 26 L479 38" stroke="#6B635A" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Product Summary with REAL Stock Image -->
+    <g transform="translate(30, 80)">
+      <rect width="460" height="86" rx="12" fill="#F8F5F0" stroke="#E6DED2"/>
+      <g clip-path="url(#prodThumbClip)" transform="translate(8, 7)">
+        <image href="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=200&amp;auto=format&amp;fit=crop&amp;q=80" width="56" height="72" preserveAspectRatio="xMidYMid slice"/>
+      </g>
+      <g transform="translate(76, 16)">
+        <text x="0" y="14" fill="#1E1B18" font-size="13" font-weight="bold">زيت زيتون بكر ممتاز معصور على البارد 5L</text>
+        <text x="0" y="32" fill="#6B635A" font-size="11">ولاية صفاقس • مخزون متوفر (50 قطعة)</text>
+        <text x="0" y="50" fill="#B8432A" font-size="12" font-weight="bold" class="mono">السعر المعروض: 125.000 د.ت</text>
+      </g>
+    </g>
 
     <!-- Quick Chips Section -->
-    <g transform="translate(30, 85)">
+    <g transform="translate(30, 185)">
       <text x="0" y="16" fill="#1E1B18" font-size="13" font-weight="600">اقتراحات سريعة بنسبة تخفيض مدروسة:</text>
       
       <!-- -5% Chip -->
-      <g transform="translate(0, 30)">
+      <g transform="translate(0, 26)">
         <rect width="140" height="50" rx="10" fill="#F3EEE6" stroke="#E6DED2"/>
         <text x="70" y="22" fill="#B8432A" font-size="12" font-weight="bold" text-anchor="middle">-5% تخفيض</text>
         <text x="70" y="40" fill="#1E1B18" font-size="13" font-weight="bold" text-anchor="middle" class="mono">118.750 د.ت</text>
       </g>
 
       <!-- -10% Chip (Selected / Active) -->
-      <g transform="translate(160, 30)">
+      <g transform="translate(160, 26)">
         <rect width="140" height="50" rx="10" fill="#D49A2A" fill-opacity="0.15" stroke="#D49A2A" stroke-width="2"/>
-        <text x="70" y="22" fill="#D49A2A" font-size="12" font-weight="bold" text-anchor="middle">★ -10% مقترح</text>
+        <text x="70" y="22" fill="#D49A2A" font-size="12" font-weight="bold" text-anchor="middle">-10% مقترح</text>
         <text x="70" y="40" fill="#2A1F08" font-size="13" font-weight="bold" text-anchor="middle" class="mono">112.500 د.ت</text>
       </g>
 
       <!-- -15% Chip -->
-      <g transform="translate(320, 30)">
+      <g transform="translate(320, 26)">
         <rect width="140" height="50" rx="10" fill="#F3EEE6" stroke="#E6DED2"/>
         <text x="70" y="22" fill="#6B635A" font-size="12" font-weight="bold" text-anchor="middle">-15% تخفيض</text>
         <text x="70" y="40" fill="#1E1B18" font-size="13" font-weight="bold" text-anchor="middle" class="mono">106.250 د.ت</text>
@@ -70,32 +83,27 @@
     </g>
 
     <!-- Custom Stepper Input -->
-    <g transform="translate(30, 200)">
+    <g transform="translate(30, 280)">
       <text x="0" y="16" fill="#1E1B18" font-size="13" font-weight="600">أو حدد سعرك المقترح بدقة (بالدينار التونسي):</text>
       
-      <rect x="0" y="30" width="460" height="56" rx="12" fill="#FFFFFF" stroke="#D49A2A" stroke-width="2"/>
-      <rect x="8" y="38" width="40" height="40" rx="8" fill="#F3EEE6"/>
-      <text x="28" y="63" fill="#1E1B18" font-size="20" font-weight="bold" text-anchor="middle">-</text>
+      <rect x="0" y="26" width="460" height="56" rx="12" fill="#FFFFFF" stroke="#D49A2A" stroke-width="2"/>
+      <rect x="8" y="34" width="40" height="40" rx="8" fill="#F3EEE6"/>
+      <text x="28" y="59" fill="#1E1B18" font-size="20" font-weight="bold" text-anchor="middle">-</text>
       
-      <text x="230" y="66" fill="#1E1B18" font-size="24" font-weight="bold" text-anchor="middle" class="mono">110.000 د.ت</text>
+      <text x="230" y="62" fill="#1E1B18" font-size="24" font-weight="bold" text-anchor="middle" class="mono">110.000 د.ت</text>
       
-      <rect x="412" y="38" width="40" height="40" rx="8" fill="#F3EEE6"/>
-      <text x="432" y="63" fill="#1E1B18" font-size="20" font-weight="bold" text-anchor="middle">+</text>
+      <rect x="412" y="34" width="40" height="40" rx="8" fill="#F3EEE6"/>
+      <text x="432" y="59" fill="#1E1B18" font-size="20" font-weight="bold" text-anchor="middle">+</text>
 
-      <text x="0" y="105" fill="#566B2F" font-size="11">وفرت 15.000 دينار كاملة (12% من السعر المعروض)</text>
+      <text x="0" y="98" fill="#566B2F" font-size="11">وفرت 15.000 دينار كاملة (12% من السعر المعروض)</text>
     </g>
 
-    <!-- Quantity Selector -->
-    <g transform="translate(30, 335)">
-      <text x="0" y="16" fill="#1E1B18" font-size="13" font-weight="600">الكمية المطلوبة:</text>
-      <rect x="0" y="26" width="120" height="40" rx="8" fill="#F3EEE6" stroke="#E6DED2"/>
-      <text x="60" y="52" fill="#1E1B18" font-size="14" font-weight="bold" text-anchor="middle">1 بيدون (5L)</text>
-    </g>
-
-    <!-- Reassurance Banner -->
+    <!-- Reassurance Banner with SVG clock icon -->
     <g transform="translate(30, 420)">
       <rect width="460" height="46" rx="10" fill="#EBF3FA" stroke="#2B5C9E" stroke-opacity="0.2"/>
-      <text x="20" y="28" fill="#2B5C9E" font-size="12">⏱ عادة ما يرد هذا التاجر خلال أقل من ساعتين (معدل القبول 84%)</text>
+      <circle cx="30" cy="23" r="8" stroke="#2B5C9E" stroke-width="1.8" fill="none"/>
+      <polyline points="30,19 30,23 33,25" stroke="#2B5C9E" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      <text x="50" y="28" fill="#2B5C9E" font-size="12">عادة ما يرد هذا التاجر خلال أقل من ساعتين (معدل القبول 84%)</text>
     </g>
 
     <!-- Submit CTA -->
@@ -105,7 +113,7 @@
     </g>
   </g>
 
-  <!-- RIGHT COLUMN: Live Chat Thread & Price Lock (540px wide) -->
+  <!-- RIGHT COLUMN: Live Chat Thread & Price Lock (520px wide) -->
   <g transform="translate(620, 160)" filter="url(#cardShadow)">
     <rect width="520" height="570" rx="16" fill="#FFFFFF" stroke="#E6DED2"/>
     
@@ -117,7 +125,6 @@
     <text x="430" y="38" fill="#2A1F08" font-size="11" font-weight="bold" text-anchor="middle">السعر محجوز ومقبول</text>
 
     <!-- Chat Messages -->
-    <!-- Bubble 1: Buyer Offer -->
     <g transform="translate(180, 85)">
       <rect width="310" height="70" rx="14" fill="#F3EEE6" stroke="#E6DED2"/>
       <text x="20" y="25" fill="#6B635A" font-size="11">أنت (المشتري) • منذ ساعتين</text>
@@ -125,7 +132,6 @@
       <text x="20" y="60" fill="#6B635A" font-size="11">"هل تقبل بهذا السعر لطلب اليوم؟"</text>
     </g>
 
-    <!-- Bubble 2: Vendor Counter -->
     <g transform="translate(30, 170)">
       <rect width="320" height="75" rx="14" fill="#EBF3FA" stroke="#2B5C9E" stroke-opacity="0.3"/>
       <text x="20" y="25" fill="#2B5C9E" font-size="11">معصرة صفاقس (التاجر) • منذ ساعة</text>
@@ -133,14 +139,13 @@
       <text x="20" y="63" fill="#6B635A" font-size="11">"مرحباً بك خونا، زيت ممتاز معصور جديد، هذا أحسن سوم."</text>
     </g>
 
-    <!-- Bubble 3: Buyer Accepts -->
     <g transform="translate(200, 260)">
       <rect width="290" height="50" rx="14" fill="#F3EEE6" stroke="#E6DED2"/>
       <text x="20" y="22" fill="#6B635A" font-size="11">أنت • منذ 30 دقيقة</text>
-      <text x="20" y="40" fill="#566B2F" font-size="13" font-weight="bold">✓ تم قبول السعر: 110.000 د.ت</text>
+      <text x="20" y="40" fill="#566B2F" font-size="13" font-weight="bold">تم قبول السعر: 110.000 د.ت</text>
     </g>
 
-    <!-- The Price Lock Ring (Signature Feature) -->
+    <!-- The Price Lock Ring -->
     <g transform="translate(30, 335)">
       <rect width="460" height="130" rx="14" fill="#FDF8ED" stroke="#D49A2A" stroke-width="2"/>
       
@@ -154,16 +159,21 @@
 
       <!-- Lock Explanation -->
       <g transform="translate(130, 25)">
-        <text x="0" y="20" fill="#2A1F08" font-size="15" font-weight="bold">تم حجز السعر وتجميد المخزون لك!</text>
+        <text x="0" y="20" fill="#2A1F08" font-size="15" font-weight="bold">تم حجز السعر وتجميد المخزون لك</text>
         <text x="0" y="40" fill="#6B635A" font-size="12">تم حجز قطعة واحدة لك في المستودع بالسعر المتفق عليه.</text>
         <text x="0" y="58" fill="#6B635A" font-size="12">إذا لم تتم الطلب قبل انتهاء العداد، يعود السعر للأصل بهدوء دون رسوم.</text>
       </g>
     </g>
 
-    <!-- Add Locked Price to Cart CTA -->
+    <!-- Add Locked Price to Cart CTA with SVG bag icon -->
     <g transform="translate(30, 485)">
       <rect width="460" height="52" rx="12" fill="#566B2F"/>
-      <text x="230" y="32" fill="#FFFFFF" font-size="15" font-weight="bold" text-anchor="middle">🛒   أضف للسلة بالسعر المتفق عليه (110.000 د.ت)</text>
+      <g transform="translate(90, 16)">
+        <path d="M0 4 H16 L13 18 H3 Z" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
+        <circle cx="5" cy="20" r="1.5" fill="#FFFFFF"/>
+        <circle cx="11" cy="20" r="1.5" fill="#FFFFFF"/>
+      </g>
+      <text x="240" y="32" fill="#FFFFFF" font-size="15" font-weight="bold" text-anchor="middle">أضف للسلة بالسعر المتفق عليه (110.000 د.ت)</text>
     </g>
   </g>
 </svg>

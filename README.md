@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/logo.svg" alt="Hanout Logo" width="100" height="100" />
+</p>
+
 # Hanout (حانوت) — The Soul of the Tunisian Souk, Re-engineered for Modern E-Commerce
 
 [![Spring Boot 3.3.4](https://img.shields.io/badge/Spring_Boot-3.3.4-brightgreen.svg)](https://spring.io/projects/spring-boot)
@@ -12,7 +16,7 @@
 
 ---
 
-## 🌟 The Hanout Manifesto: Honoring Tunisian Authenticity
+## The Hanout Manifesto: Honoring Tunisian Authenticity
 
 ### 1. The Art of *El Mssawma* (المساومة الحية)
 Traditional e-commerce forces rigid catalog pricing that alienates local artisans and buyers. In Hanout, **every price is a potential conversation**. Buyers propose offers with intuitive discount chips (`-5%`, `-10%`, `-15%`) or exact dinar steppers. When an artisan accepts or counters, a **live price lock** freezes inventory for that buyer, preventing disappointment while ensuring the artisan's stock is never taken hostage by lowball bids.
@@ -26,16 +30,17 @@ Hanout does not sell generic dropshipped goods. It directly empowers local produ
 
 ### 3. The "Anti-Slop" Design Philosophy
 Modern commercial apps have devolved into interchangeable corporate templates drowned in purple-to-indigo gradients, neon glows, and gimmicky emojis. Hanout rejects this trend entirely:
+- **Zero Emojis Everywhere**: Real stock photography at a consistent `4:5` aspect ratio and clean vector line icons are used throughout the entire platform.
 - **Page Canvas (`#FBF8F3`)**: A warm lime-wash white (*chaux / الحجر الجيري*), reminiscent of traditional Medina architecture.
 - **Primary Action (`#B8432A`)**: The vibrant fiery red of fresh Cap Bon harissa (*Le rouge harissa*).
 - **Haggling States (`#D49A2A`)**: The golden saffron yellow of Tunisian spice souks (*Zaâfrane*).
 - **In-Stock & Delivered (`#566B2F`)**: The deep earthy green of Mediterranean olive groves.
 - **Courier & Info (`#2B5C9E`)**: The iconic azure blue of Sidi Bou Said doorways.
-- **Restraint & Dignity**: 1px hairline borders (`#E6DED2`), 4:5 real photography ratios, and subtle low-opacity zellige geometric motifs.
+- **Restraint & Dignity**: 1px hairline borders (`#E6DED2`), authentic product photography, and subtle low-opacity zellige geometric motifs.
 
 ---
 
-## 📸 Frontend Showcase & Visual Tour
+## Frontend Showcase & Visual Tour
 
 ### 1. The Storefront & Regional Shelves
 The homepage bypasses generic banners and puts **Search First**. A prominent trilingual search bar supports colloquial Arabizi shortcuts (`zitoun`, `7rissa`, `degla`), followed by live cards for active negotiations and curated regional shelves from Sfax, Nabeul, and Tozeur.
@@ -72,7 +77,7 @@ Artisans manage their business effortlessly with real-time conversion metrics an
 
 ---
 
-## 🏛️ System Architecture
+## System Architecture
 
 Hanout is structured as a **Modular Monolith** using **Spring Modulith 1.2.4** and **Spring Boot 3.3.4**, verified at build-time with `ApplicationModules.of(HanoutApplication.class).verify()`.
 
@@ -121,7 +126,7 @@ graph TD
 
 ---
 
-## 💎 Engineering Rigor & Key Technical Decisions
+## Engineering Rigor & Key Technical Decisions
 
 ### 1. Millimes Math — Zero Floating Point Drift
 All monetary columns and calculations wrap **BIGINT millimes** inside the immutable `Money` record (1 TND = 1,000 millimes). Floats and doubles are strictly forbidden across both backend and frontend.
@@ -160,7 +165,7 @@ Compliant with Tunisian tax authorities (*Code de la TVA*):
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### 1. Backend (Spring Boot + Modulith)
 ```bash
@@ -188,7 +193,7 @@ Navigate to `http://localhost:4200` to experience the platform.
 
 ---
 
-## 🧪 Automated Test Suite
+## Automated Test Suite
 
 | Test Suite | Scope | Result |
 |---|---|---|
@@ -203,7 +208,7 @@ Navigate to `http://localhost:4200` to experience the platform.
 
 ---
 
-## 📜 REST API Reference
+## REST API Reference
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -221,6 +226,6 @@ Navigate to `http://localhost:4200` to experience the platform.
 
 ---
 
-## 🇹🇳 Built with Pride for the Tunisian Artisan Community
+## Built with Pride for the Tunisian Artisan Community
 Designed and developed in the Republic of Tunisia.
 Hanout proves that cultural authenticity and cutting-edge software architecture don't just coexist — they elevate one another.

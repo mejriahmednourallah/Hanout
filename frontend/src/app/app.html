@@ -4,9 +4,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
       <!-- Brand Logo & Subtitle -->
       <a routerLink="/" class="flex items-center gap-3 group">
-        <div class="w-11 h-11 rounded-2xl bg-primary flex items-center justify-center text-white font-serif font-black text-2xl shadow-sm group-hover:scale-105 transition">
-          ح
-        </div>
+        <img src="logo.svg" alt="Hanout Logo" class="w-11 h-11 rounded-2xl shadow-sm group-hover:scale-105 transition" />
         <div class="flex flex-col">
           <span class="font-serif text-2xl font-black text-primary tracking-tight flex items-center gap-2">
             {{ i18n.t('app.title') }}
@@ -130,9 +128,7 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div class="space-y-3 md:col-span-2">
           <div class="flex items-center gap-2">
-            <span class="w-8 h-8 rounded-xl bg-primary text-white flex items-center justify-center font-serif font-black text-lg">
-              ح
-            </span>
+            <img src="logo.svg" alt="Hanout Logo" class="w-8 h-8 rounded-xl shadow-xs" />
             <span class="font-serif text-xl font-bold text-foreground">حانوت (Hanout)</span>
           </div>
           <p class="text-xs text-muted-foreground max-w-md leading-relaxed">
@@ -154,13 +150,22 @@
           <h5 class="font-semibold text-foreground uppercase tracking-wider">الأمان والمطابقة</h5>
           <div class="space-y-1.5 text-muted-foreground">
             <div class="flex items-center gap-2 text-success font-medium">
-              <span>✓</span> الدفع عند الاستلام (COD)
+              <svg class="w-3.5 h-3.5 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+              </svg>
+              الدفع عند الاستلام (COD)
             </div>
             <div class="flex items-center gap-2 text-info font-medium">
-              <span>✓</span> الربط المباشر مع Rapide-Poste
+              <svg class="w-3.5 h-3.5 text-info" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+              </svg>
+              الربط المباشر مع Rapide-Poste
             </div>
             <div class="flex items-center gap-2 text-foreground font-medium">
-              <span>✓</span> فواتير قانونية بالمعرف الجبائي
+              <svg class="w-3.5 h-3.5 text-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+              </svg>
+              فواتير قانونية بالمعرف الجبائي
             </div>
           </div>
         </div>
